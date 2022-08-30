@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: rgb(0, 179, 125);
 }
 
 img {
@@ -14,4 +15,34 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+input {
+  border-color: rgb(213, 255, 99);
+}
+#mainTitle {
+  color: rgb(4, 221, 22);
+}
+.first-line {
+  color: rgb(116, 255, 236);
+}
+.third-line.class-text {
+  color: rgb(250, 191, 64);
+}
+#secondText {
+  color: rgb(134, 0, 0);
+}
+div > span {
+  color: rgb(92, 80, 255);
+}
+span {
+  color: rgb(180, 45, 45);
+}
+.class-text {
+  color: blueviolet;
+}
+.second-line {
+  color: coral;
+}
+.eighth-line {
+  color: darkslategray;
 }
