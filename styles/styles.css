@@ -30,10 +30,11 @@ html {
   display: none;
 }
 
-.panel {
-  background-color: #e6e6e6;
-  max-width: 1000px;
+.mg {
   margin: 50px 50px;
+}
+.bg {
+  background-color: #e6e6e6;
 }
 
 .float-left {
@@ -64,30 +65,18 @@ html {
   background-color: #fc8f8f;
 }
 
-.Second-Level > .two {
-  margin-left: 355px;
+.Second-Level > .Intermediate-Level > .two {
+  margin-right: 15px;
 }
-
-.Second-Level > .three {
-  margin-left: 15px;
+.Second-Level > .Intermediate-Level > .three {
+  margin-right: 15px;
 }
-
-.Second-Level > .four {
-  margin-left: 15px;
+.Second-Level > .Intermediate-Level > .four {
+  margin-right: 15px;
 }
-
-.Second-Level > .five {
-  margin-left: 15px;
+.Third-Level > .one {
+  margin-right: 15px;
 }
-
-.Third-Level > .two {
-  margin-left: 15px;
-}
-
-.Third-Level > .three {
-  margin-left: 170px;
-}
-
-.Third-Level > .four {
-  margin-left: 15px;
+.Third-Level > .Intermediate-Level > .three {
+  margin-right: 15px;
 }
