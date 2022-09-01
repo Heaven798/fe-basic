@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #c4c4c4;
 }
 
 img {
@@ -10,10 +11,10 @@ img {
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #303030;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
 }
 
 .container {
@@ -23,4 +24,70 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.TitleText {
+  display: none;
+}
+
+.panel {
+  background-color: #e6e6e6;
+  max-width: 1000px;
+  margin: 50px 50px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.square {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+}
+
+.square-small {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fc8f8f;
+}
+
+.Second-Level > .two {
+  margin-left: 355px;
+}
+
+.Second-Level > .three {
+  margin-left: 15px;
+}
+
+.Second-Level > .four {
+  margin-left: 15px;
+}
+
+.Second-Level > .five {
+  margin-left: 15px;
+}
+
+.Third-Level > .two {
+  margin-left: 15px;
+}
+
+.Third-Level > .three {
+  margin-left: 170px;
+}
+
+.Third-Level > .four {
+  margin-left: 15px;
 }
