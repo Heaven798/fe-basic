@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/font.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Регистрация</title>
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Авторизация</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="./index.html">Регистрация</a>
-            <a href="./pages/Authorization.html">Авторизация</a>
-            <a href="./pages/Authorization.html">Поиск</a>
+            <a href="../index.html">Регистрация</a>
+            <a href="./Authorization.html">Авторизация</a>
+            <a href="./Search.html">Поиск</a>
         </nav>
     </header>
     <main>
         <hr>
         <section>
             <div class="container">
-                <h1 class="TitleText">Регистрация</h1>
+                <h1 class="TitleText">Авторизация</h1>
             </div>
         </section>
-        <form action="https://fom.in.ua/echo" method="post" class="Registration default center">
+        <form action="https://fom.in.ua/echo" method="post" class="Authorization default center">
             <label>
                 <span>Электронная почта:</span>
                 <input type="email" name="email" required>
@@ -35,16 +35,14 @@
                 <input type="password" name="password" required>
             </label>
             <label>
-                <span>Подтверждение пароля:</span>
-                <input type="password" name="repeat password" required>
+                <span>Запомнить пароль:</span>
+                <input type="checkbox" name="remember password checkbox">
             </label>
             <label>
                 <input type="submit">
             </label>
         </form>
     </main>
-    <footer>
-    </footer>
 </body>
 
 </html>

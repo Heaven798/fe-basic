@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Поиск</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Регистрация</a>
+            <a href="./Authorization.html">Авторизация</a>
+            <a href="./Search.html">Поиск</a>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section>
+            <div class="container">
+                <h1 class="TitleText">Поиск</h1>
+            </div>
+        </section>
+        <form action="https://fom.in.ua/echo" method="post" class="Search default center">
+            <label>
+                <span>Типы автомобилей:</span>
+                <select name="Car Types">
+                    <option value="none" disabled selected>Все типы автомобилей</option>
+                    <option value="Sedan">Седан</option>
+                    <option value="Wagon">Универсал</option>
+                    <option value="Hatchback">Хетчбэк</option>
+                    <option value="Liftback">Лифтбэк</option>
+                    <option value="Suv">Кроссовер</option>
+                    <option value="Coupe">Купе</option>
+                </select>
+            </label>
+            <label>
+                <span>Марка автомобилей:</span>
+                <select name="Car Brands">
+                    <option value="none" disabled selected>Все марки автомобилей</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Porsche">Porsche</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Renault">Renault</option>
+                    <option value="LandRover">Land Rover</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Skoda">Skoda</option>
+                </select>
+            </label>
+            <label>
+                <span>Страна производитель:</span>
+                <select name="Car Country">
+                    <option value="none" disabled selected>Все страны производители</option>
+                    <option value="Japan">Япония</option>
+                    <option value="Germany">Германия</option>
+                    <option value="Usa">Cша</option>
+                    <option value="Korea">Корея</option>
+                    <option value="French">Франция</option>
+                    <option value="UnitedKingdom">Англия</option>
+                    <option value="Italia">Италия</option>
+                    <option value="Czech">Чехия</option>
+                </select>
+            </label>
+            <fieldset class="center">
+                <legend>Ценa:</legend>
+                <label>
+                    <span>От</span>
+                    <input type="number" name="From Car price" step="100">
+                </label>
+                <label>
+                    <span>До</span>
+                    <input type="number" name="To Car price" step="100">
+                </label>
+                <label>
+                    <select name="FromYear">
+                        <option value="USD" disabled selected>$</option>
+                        <option value="UAH">€</option>
+                        <option value="EUR">₴</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="YearCarProduced center">
+                <legend>Год выпуска:</legend>
+                <label>
+                    <select name="FromYear">
+                        <option value="none" disabled selected>Год, от</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                    </select>
+                </label>
+                <label>
+                    <select name="ToYear">
+                        <option value="none" disabled selected>Год, до</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="CarStatus center">
+                <legend>Состояние:</legend>
+                <label>
+                    <input type="checkbox" name="Had a car actident">
+                    <span>Была в ДТП</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="The car is not cleared">
+                    <span>Не растаможенная</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Car Imported from USA">
+                    <span>Авто пригнанное из США</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Loan car">
+                    <span>В кредите</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Impounded car">
+                    <span>Конфискат</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="First owner">
+                    <span>Первый владелец</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="First registration">
+                    <span>Первая регистрация</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Garage storage">
+                    <span>Гаражное хранение</span>
+                </label>
+            </fieldset>
+            <label>
+                <span>Тип топливо:</span>
+                <select name="Types of car fuel">
+                    <option value="none" disabled selected>Все типы топливо</option>
+                    <option value="Gasoline">Бензин</option>
+                    <option value="Diesel">Дизель</option>
+                    <option value="Gas">Газ</option>
+                    <option value="Hybrid">Гибрид</option>
+                    <option value="Electric">Электро</option>
+                </select>
+            </label>
+            <label>
+                <span>Тип коробки передач:</span>
+                <select name="Types of car gearbox">
+                    <option value="none" disabled selected>Все типы коробки передач</option>
+                    <option value="Manual">Механическая</option>
+                    <option value="Automatic">Автоматическая</option>
+                    <option value="Dual Clutch">Роботизированная</option>
+                    <option value="Variable">Вариативная</option>
+                </select>
+            </label>
+            <label>
+                <span>Цвет автомобиля:</span>
+                <input type="color" name="Car color" onchange="(e) =>console.log(e.target.value)">
+            </label>
+            <fieldset class="CarOption center">
+                <legend>Опции:</legend>
+                <label>
+                    <input type="checkbox" name="Seat ventilation">
+                    <span>Вентеляция седений</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Seat heating">
+                    <span>Подогрев седений</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Electric lifts">
+                    <span>Електроподъемники</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Leather interior">
+                    <span>Кожаный салон</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Air conditioner">
+                    <span>Кондиционер</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Power steering">
+                    <span>Усилитель руля</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Adaptive cruise control">
+                    <span>Адаптивный круиз контроль</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Keyless entry">
+                    <span>Безключевой доступ</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="Head-up display">
+                    <span>Проекционный дисплей</span>
+                </label>
+            </fieldset>
+            <label>
+                <input type="submit">
+            </label>
+        </form>
+    </main>
+</body>
+
+</html>
