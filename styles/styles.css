@@ -24,3 +24,34 @@ html {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.TitleText {
+  display: none;
+}
+
+body {
+  font-size: 20px;
+  padding: 5rem;
+}
+
+td,
+th {
+  padding: 0.25rem;
+}
+
+.MainTable,
+.Table1,
+.Table2,
+.Table3,
+.Table4 {
+  border: 1px solid #ccc;
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.yellow {
+  background-color: yellow;
+}
