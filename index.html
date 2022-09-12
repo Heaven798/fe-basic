@@ -11,31 +11,33 @@
 </head>
 
 <body>
-    <header>
-    </header>
-    <main>
-        <section>
-            <div class="Main">
+    <section class="MainSection">
+        <header>
+            <div class="Navigation">
                 <nav class="Nav">
                     <a class="MainNav" href="#">ГЛАВНАЯ</a>
                     <a class="SecondNav" href="#">ОБ АВТОРЕ</a>
                     <a class="SecondNav" href="#">РАБОТЫ</a>
-                    <a class="SecondNav" href="#">ПРОЦЕСС</a>
                     <a class="SecondNav" href="#">КОНТАКТЫ</a>
+                    <a class="SecondNav" href="#">ПРОЦЕСС</a>
                 </nav>
-                <h1 class="TitleText">Дизайн и верстка</h1>
-                <p class="SecondText">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                    <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-                    <br> на латинице с начала XVI века.
-                </p>
-                <form action="https://fom.in.ua/echo" method="post">
-                    <label class="Button">
-                        <input class="button" type="submit" value="НАПИСАТЬ МНЕ">
-                    </label>
-                </form>
             </div>
-        </section>
+        </header>
+        <div class="Main">
+            <h1 class="TitleText">Дизайн и верстка</h1>
+            <p class="SecondText">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                <br> на латинице с начала XVI века.
+            </p>
+            <form action="https://fom.in.ua/echo" method="post">
+                <label class="button">
+                    <input class="button_inner" type="submit" value="НАПИСАТЬ МНЕ">
+                </label>
+            </form>
+        </div>
+    </section>
+    <main>
         <section>
             <div class="AboutMe">
                 <h2 class="TitleText">Обо мне</h2>
@@ -46,9 +48,9 @@
                 </p>
             </div>
         </section>
-        <section>
+        <section class="CardSection">
             <div class="HowManyProject">
-                <div class="Card MainCard">
+                <div class="Card">
                     <img src="./images/Card.svg" alt="Card">
                 </div>
                 <div class="Card SecondCard">
@@ -68,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="HowIWorkedSection">
             <div class="HowIWorked">
                 <h2 class="TitleText">Как я работаю</h2>
                 <p class="SecondText">
@@ -76,16 +78,21 @@
                     <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
                     <br> на латинице с начала XVI века.
                 </p>
-                <div class="Video">
-                    <video class="video" src="./video/Video.mp4" controls></video>
+                <div class="video">
+                    <video class="video_inner" src="./video/Video.mp4" controls height="600" width="1110">
+                    </video>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <h3 class="TitleText">Иванов Иван</h3>
-        <p class="SecondText">(с) 2018. Все права защищены.</p>
-    </footer>
+    <section class="FooterSection">
+        <footer>
+            <div class="FooterClass">
+                <h3 class="TitleText">Иванов Иван</h3>
+                <p class="SecondText">(с) 2018. Все права защищены.</p>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
