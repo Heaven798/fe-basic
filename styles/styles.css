@@ -16,34 +16,22 @@ html {
   color: #303030;
 }
 
-/* .container {
+.container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-} */
+}
+
 .MainSection {
   background-color: #eeeff1;
 }
 
 .Navigation {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 79px 0px 0px 0px;
 }
 
-.Nav {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Nav > .MainNav {
+.Navigation > nav > .MainNav {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -54,7 +42,7 @@ html {
   text-decoration: none;
 }
 
-.Nav > .SecondNav {
+.Navigation > nav > .SecondNav {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.625;
@@ -62,13 +50,6 @@ html {
   color: #000000;
   margin-right: 42px;
   text-decoration: none;
-}
-
-.Main {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .Main > .TitleText {
@@ -129,13 +110,6 @@ html {
   background: #34547a;
 }
 
-.HowManyProject {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .HowManyProject > .Card {
   display: inline-block;
   padding: 100px 0px 100px 0px;
@@ -147,13 +121,6 @@ html {
 
 .HowIWorkedSection {
   background: #eeeff1;
-}
-
-.HowIWorked {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .HowIWorked > .TitleText {
@@ -182,13 +149,6 @@ html {
 
 .FooterSection {
   background-color: #34547a;
-}
-
-footer {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .FooterSection > footer > .FooterClass > .TitleText {
