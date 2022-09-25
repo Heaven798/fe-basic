@@ -47,6 +47,10 @@ a {
   justify-content: space-between;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -120,6 +124,10 @@ a {
   padding-right: 15px; */
 }
 
+.gap7 {
+  gap: 7px;
+}
+
 .gap40 {
   gap: 40px;
 }
@@ -152,6 +160,14 @@ a {
   margin-right: 40px;
 }
 
+.mg-top10 {
+  margin-top: 10px;
+}
+
+.mg-top20 {
+  margin-top: 20px;
+}
+
 .Navigation a {
   font-size: 14px;
   line-height: 1.43;
@@ -174,6 +190,7 @@ a {
 
 .AboutUs-container {
   background-color: var(--color-grey);
+  border-radius: 10px;
 }
 
 .AboutUs-container .photo {
@@ -394,7 +411,7 @@ a {
   font-family: inherit;
   background-color: #ffc728;
   border-radius: 5px;
-  padding: 25px 0px;
+  padding: 15px 0px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 12px;
@@ -448,8 +465,32 @@ a {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.16;
+  color: #333;
+  margin-bottom: 11px;
 }
 
-.SecondCard2 img {
-  max-width: 139px;
+.inpt {
+  border-radius: 5px 0px 0px 5px;
+  text-decoration: none;
+  border: 1px solid #aabcc5;
+  padding: 16px 0px;
+  min-width: 274px;
+}
+
+.btn-grey {
+  background: #768f9c;
+  border: none;
+  min-width: 81px;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.List .SecondText {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hr {
+  background: #536d7a;
 }
