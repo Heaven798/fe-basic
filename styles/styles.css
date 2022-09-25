@@ -1,3 +1,11 @@
+:root {
+  --color-green: #10843f;
+  --background-color: #ffffff;
+  --color-grey: #e3ebf1;
+  --color-grey-light: #f7f9fa;
+  --text-color: #1d2f38;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +17,439 @@ img {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
-  color: #303030;
+  line-height: 1.38;
+  color: var(--text-color);
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.alignc-end {
+  align-content: flex-end;
+}
+
+.aligni-center {
+  align-items: center;
+}
+
+.aligns-end {
+  align-self: flex-end;
+}
+
+.aligns-center {
+  align-self: center;
+}
+
+.mg-lf15 {
+  margin-left: 15px;
+}
+
+.btn {
+  border: none;
+  min-width: 161px;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+}
+
+.btn-little {
+  border: none;
+  min-width: 111px;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+}
+
+.btn-green {
+  padding: 15px 0px;
+  background-color: #17a550;
+  font-size: 15px;
+  line-height: 1.33;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+}
+
+.gap40 {
+  gap: 40px;
+}
+
+.gap30 {
+  gap: 30px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.mg-btm25 {
+  margin-bottom: 25px;
+}
+
+.mg-btm20 {
+  margin-bottom: 20px;
+}
+
+.mg-btm10 {
+  margin-bottom: 10px;
+}
+
+.mg_tp31 {
+  margin-top: 31px;
+}
+
+.mg-rgt40 {
+  margin-right: 40px;
+}
+
+.Navigation a {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.Navigation {
+  box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.29);
+  padding: 15px 0px;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+/*-----------AboutUs---------------------------------------------------------*/
+
+.AboutUs {
+  padding: 60px 0px 77px;
+}
+
+.AboutUs-container {
+  background-color: var(--color-grey);
+}
+
+.AboutUs-container .photo {
+  padding: 50px 0px 50px 50px;
+}
+
+.AboutUs-wrap {
+  padding: 50px;
+}
+
+.AboutUs .Wrap {
+  max-width: 500px;
+}
+
+.AboutUs .Text-Green {
+  color: var(--color-green);
+  line-height: 1.38;
+}
+
+.AboutUs .TitleText {
+  font-family: "Bitter", sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.AboutUs .SecondText .Bold {
+  font-weight: 700;
+}
+
+/*---------Blog------------------------------------------------------------------*/
+
+.Blog {
+  padding-bottom: 100px;
+}
+
+.Blog .TitleText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.05;
+  margin-bottom: 33px;
+}
+
+.Blog .MainCard .Wrap {
+  max-width: 546px;
+}
+
+.MainCard img {
+  margin-bottom: 9px;
+}
+
+.Blog .MainCard .Wrap .TitleText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.16;
+  margin-bottom: 13px;
+}
+
+.Blog .MainCard .Wrap .SecondText {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.13;
+  margin-top: 9px;
+  margin-bottom: 13px;
+}
+
+.Blog .SecondCard .SecondText {
+  font-size: 18px;
+  line-height: 1.38;
+}
+
+.Blog .Main-container {
+  justify-content: space-between;
+}
+
+.Blog .Main-container .MainCard {
+  justify-content: flex-start;
+}
+
+.Blog .Main-container .SecondCard {
+  flex-direction: column;
+  justify-content: center;
+}
+.Blog .More {
+  margin-top: 74px;
+}
+
+.Blog .More .SecondText {
+  margin-left: 5px;
+}
+
+/*-----------List----------------------------------------------------------*/
+
+.List {
+  padding-bottom: 97px;
+}
+
+.List .MainList {
+  background: url("../images/Background-short.jpg") #e3ebf1;
+  padding: 31px 0px;
+  border-radius: 10px;
+}
+
+.List .MainList .Photo {
+  margin-left: 30px;
+}
+
+.List .MainList .SecondText {
+  margin-left: 12px;
+}
+
+.List .MainList .btn-little {
+  margin-right: 40px;
+}
+
+/*----------Reviews------------------------------------------------------------*/
+
+.Reviews {
+  padding-bottom: 100px;
+}
+
+.Reviews .TitleText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.05;
+  margin-bottom: 33px;
+}
+
+.Reviews .Card {
+  border-radius: 10px;
+  background: #f7f9fa;
+  max-width: 357px;
+}
+
+.Reviews .Card .wrap {
+  padding: 24px 33px 39px 25px;
+  min-width: 300px;
+}
+
+.Reviews .Card .wrap .TitleText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.16;
+  margin-bottom: 13px;
+}
+
+.Reviews .Card .wrap .SecondText {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+.Reviews .More {
+  margin-top: 40px;
+}
+
+/*---------Email---------------------------------------------------------------*/
+
+.Email {
+  padding-bottom: 100px;
+}
+
+.Email-container {
+  background: url("../images/Background.jpg");
+  min-width: 500px;
+}
+
+.Email .wrap {
+  padding: 50px;
+}
+
+.Email .wrap .Title {
+  margin-bottom: 31px;
+}
+
+.Email .wrap .TitleText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.16;
+}
+
+.Email .wrap .SecondText {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 24px;
+}
+
+.Email .wrap .input {
+  text-decoration: none;
+  border: 1px solid #aabcc5;
+  border-radius: 5px;
+  padding: 25px 0px;
+  min-width: 500px;
+}
+
+.Email .wrap .input::placeholder {
+  padding: 15px 0px 15px 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #536d7a;
+}
+
+.Email .wrap .btn-yellow {
+  border: none;
+  min-width: 82px;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  background-color: #ffc728;
+  border-radius: 5px;
+  padding: 25px 0px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #000000;
+}
+
+.Email .Email-container .Photo {
+  padding: 50px;
+}
+
+.Email .Email-container .ThirdText {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #536d7a;
+}
+
+/*-----------Footer--------------------------------------------------*/
+
+.Footer {
+  padding: 20px 145px;
+  background-color: var(--color-grey-light);
+}
+
+.Footer .wrap {
+  max-width: 356px;
+}
+
+.WrapText {
+  max-width: 306px;
+}
+
+.SecondText {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.SecondText .Bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.TitleText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.16;
+}
+
+.SecondCard2 img {
+  max-width: 139px;
 }

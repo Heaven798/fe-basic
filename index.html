@@ -12,15 +12,203 @@
 
 <body>
     <header>
+        <div class="Navigation">
+            <div class="container flex">
+                <div class=" logo">
+                    <a href="#">
+                        <img src="./images/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="container">
+                    <ul class="flex gap30">
+                        <li><a class="Pages" href="#">Pages</a></li>
+                        <li><img src="./images/Categories.svg" alt="photo"><a class="Categories" href="#">Categories</a>
+                        </li>
+                        <li><img src="./images/Blog.svg" alt="photo"><a class="Blog" href="#">Blog</a></li>
+                        <li><img src="./images/Reviews.svg" alt="photo"><a class="Reviews" href="#">Reviews</a></li>
+                        <li><img src="./images/BuyingGuides.svg" alt="photo"><a class="BuyingGuides"
+                                href="#">BuyingGuides</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul class="flex flex-end">
+                        <li><img src="./images/Singup.svg" alt="photo"><a class="Signup" href="#">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="AboutUs">
+            <div class="AboutUs-container container flex justify-between">
+                <div class="photo flex">
+                    <img src="./images/AboutUs.png" alt="photo">
+                </div>
+                <div class="AboutUs-wrap align-center flex">
+                    <div class="Wrap">
+                        <p class="Text-Green mg-btm10">Introducing Affiliate Template for Webflow</p>
+                        <h1 class="TitleText mg-btm25">Easy-to-use Template for building Affiliate Sites</h1>
+                        <p class="SecondText mg-btm25"> <span class="Bold">Affiliate</span> is a Webflow template made
+                            for entrepreneurs who want a professional and polished
+                            site ready to start and grow their affiliate marketing business in any niche.</p>
+                        <button class="btn btn-green">Buy this Template</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Blog">
             <div class="container">
-                <h1>HomeWork</h1>
+                <h2 class="TitleText">Latest from the Blog</h2>
+                <div class="Cards flex">
+                    <div class="MainCard container">
+                        <img src="./images/MainCard.jpg" alt="Nature">
+                        <div class="Wrap">
+                            <h3 class="TitleText">How to Prep Your Lawn in the Spring</h3>
+                            <p class="SecondText">This is the blog description text. This is the blog description
+                                text.This is the blog description text.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="SecondCard container">
+                        <div class="flex mg-btm20 align-center">
+                            <img src="./images/SecondCard1.jpg" alt="Nature">
+                            <p class="SecondText mg-lf15">Secrets to Know About Hedge Trimming</p>
+                        </div>
+                        <div class="flex mg-btm20 align-center">
+                            <img src="./images/SecondCard2.jpg" alt="Nature">
+                            <p class="SecondText mg-lf15">What to Do With a Dying Tree</p>
+                        </div>
+                        <div class="flex mg-btm20 align-center">
+                            <img src="./images/SecondCard3.jpg" alt="Nature">
+                            <p class="SecondText mg-lf15">Which Flowers Should You Plant Garden</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="More container flex">
+                    <img src="./images/More.png" alt="PlayButton">
+                    <p class="SecondText">View All Blog Articles</p>
+                </div>
+            </div>
+        </section>
+        <section class="List">
+            <div class="MainList container flex justify-between">
+                <div class="flex justify-start">
+                    <img class="Photo" src="./images/List.png" alt="Instruments">
+                    <h2 class="SecondText">View our list of the best products in lawncare.</h2>
+                </div>
+                <div class=" flex justify-end">
+                    <button class="btn-little btn-green">See the list</button>
+                </div>
+            </div>
+        </section>
+        <section class="Reviews">
+            <div class="container">
+                <h2 class="TitleText">Latest Product Reviews</h2>
+                <div class="flex justify-between">
+                    <div class="Card">
+                        <img src="./images/Card1.jpg" alt="Instruments">
+                        <div class="wrap">
+                            <h3 class="TitleText">Lawnmower Xtreme</h3>
+                            <p class="SecondText">This is the Review Snippet. This is the Review Snippet. This is the
+                                Review Snippet. This
+                                is
+                                the
+                                Review Snippet.</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <img src="./images/Card2.jpg" alt="Instruments">
+                        <div class="wrap">
+                            <h3 class="TitleText">Ultra Grow Fertilizer</h3>
+                            <p class="SecondText">This is the Review Snippet. This is the Review Snippet. This is the
+                                Review Snippet. This
+                                is the Review Snippet.</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <img src="./images/Card3.jpg" alt="Instruments">
+                        <div class="wrap">
+                            <h3 class="TitleText">Hedge Clippers</h3>
+                            <p class="SecondText">This is the Review Snippet. This is the Review Snippet. This is the
+                                Review Snippet. This
+                                is the Review Snippet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="More container flex">
+                    <img src="./images/More.png" alt="PlayButton">
+                    <p class="SecondText">View All Blog Articles</p>
+                </div>
+            </div>
+        </section>
+        <section class="Email">
+            <div class="Email-container container flex justify-between">
+                <div class="Photo">
+                    <a href="#">
+                        <img src="./images/Woman.png" alt="Woman">
+                    </a>
+                </div>
+                <div class="wrap">
+                    <div class="Title flex aligns-center gap10">
+                        <img src="./images/Email.png" alt="Email">
+                        <div class="flex aligns-center">
+                            <h2 class="TitleText">Newsletter Signup</h2>
+                        </div>
+                    </div>
+                    <p class="SecondText">Be the first to receive updates on articles, product reviews, courses, and
+                        more!</p>
+                    <input class="input" type="email" placeholder="Your email">
+                    <div class="flex justify-start gap10 mg_tp31">
+                        <button class="btn-yellow ">Submit</button>
+                        <div class="flex aligns-center">
+                            <p class="ThirdText">Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
+        <section class="Footer">
+            <div class="container">
+                <div class="flex justify-start">
+                    <div class="wrap mg-rgt40">
+                        <img class="mg-btm10" src="./images/Logo-Big.png" alt="Logo">
+                        <div class="flex mg-btm20">
+                            <img src="./images/Logo-Facebook.svg" alt="Logo">
+                            <img src="./images/Logo-Twitter.svg" alt="Logo">
+                            <img src="./images/Logo-Instagram.svg" alt="Logo">
+                        </div>
+                        <div class="WrapText">
+                            <p class="SecondText"> <span class="Bold">Affiliate</span> is a Webflow template made for
+                                entrepreneurs who want a
+                                professional and polished site ready to start and grow their affiliate marketing
+                                business in
+                                any niche.</p>
+                        </div>
+                    </div>
+                    <div class="wrap mg-rgt40">
+                        <h2 class="TitleText">Latest Articles</h2>
+                        <div class="Cards flex">
+                            <div class="SecondCard2 container">
+                                <div class="flex mg-btm20 align-center">
+                                    <img src="./images/SecondCard1.jpg" alt="Nature">
+                                    <p class="SecondText mg-lf15">Secrets to Know About Hedge Trimming</p>
+                                </div>
+                                <div class="flex mg-btm20 align-center">
+                                    <img src="./images/SecondCard2.jpg" alt="Nature">
+                                    <p class="SecondText mg-lf15">What to Do With a Dying Tree</p>
+                                </div>
+                                <div class="flex mg-btm20 align-center">
+                                    <img src="./images/SecondCard3.jpg" alt="Nature">
+                                    <p class="SecondText mg-lf15">Which Flowers Should You Plant Garden</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 
