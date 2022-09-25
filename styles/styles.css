@@ -98,14 +98,6 @@ a {
   font-family: inherit;
 }
 
-.btn-little {
-  border: none;
-  min-width: 111px;
-  cursor: pointer;
-  text-align: center;
-  font-family: inherit;
-}
-
 .btn-green {
   padding: 15px 0px;
   background-color: #17a550;
@@ -120,8 +112,6 @@ a {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
 }
 
 .gap7 {
@@ -168,7 +158,11 @@ a {
   margin-top: 20px;
 }
 
+/*--------Navigation------------------------------------------------------*/
+
 .Navigation a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
 }
@@ -178,8 +172,12 @@ a {
   padding: 15px 0px;
 }
 
-.logo {
+.Navigation .logo {
   margin-right: 30px;
+}
+
+.Navigation .Signup {
+  min-width: 113px;
 }
 
 /*-----------AboutUs---------------------------------------------------------*/
@@ -215,6 +213,7 @@ a {
   font-size: 47px;
   font-weight: 400;
   line-height: 1.1;
+  color: var(--text-color);
 }
 
 .AboutUs .SecondText .Bold {
@@ -264,24 +263,16 @@ a {
   line-height: 1.38;
 }
 
-.Blog .Main-container {
-  justify-content: space-between;
-}
-
-.Blog .Main-container .MainCard {
-  justify-content: flex-start;
-}
-
-.Blog .Main-container .SecondCard {
-  flex-direction: column;
-  justify-content: center;
-}
 .Blog .More {
   margin-top: 74px;
 }
 
 .Blog .More .SecondText {
-  margin-left: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-left: 4px;
 }
 
 /*-----------List----------------------------------------------------------*/
@@ -301,11 +292,25 @@ a {
 }
 
 .List .MainList .SecondText {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
   margin-left: 12px;
+  min-width: 628px;
 }
 
 .List .MainList .btn-little {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.46;
   margin-right: 40px;
+  border: none;
+  min-width: 111px;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
 }
 
 /*----------Reviews------------------------------------------------------------*/
@@ -360,7 +365,11 @@ a {
 
 .Email-container {
   background: url("../images/Background.jpg");
-  min-width: 500px;
+  border-radius: 10px;
+}
+
+.Email .Email-container .Photo {
+  padding: 50px;
 }
 
 .Email .wrap {
@@ -419,10 +428,6 @@ a {
   color: #000000;
 }
 
-.Email .Email-container .Photo {
-  padding: 50px;
-}
-
 .Email .Email-container .ThirdText {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -434,33 +439,33 @@ a {
 /*-----------Footer--------------------------------------------------*/
 
 .Footer {
-  padding: 20px 145px;
   background-color: var(--color-grey-light);
+  padding: 70px 0px 20px;
 }
 
 .Footer .wrap {
   max-width: 356px;
 }
 
-.WrapText {
+.Footer .WrapText {
   max-width: 306px;
 }
 
-.SecondText {
+.Footer .SecondText {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
 }
 
-.SecondText .Bold {
+.Footer .SecondText .Bold {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
 }
 
-.TitleText {
+.Footer .TitleText {
   font-family: "Bitter", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -469,7 +474,7 @@ a {
   margin-bottom: 11px;
 }
 
-.inpt {
+.Footer .inpt {
   border-radius: 5px 0px 0px 5px;
   text-decoration: none;
   border: 1px solid #aabcc5;
@@ -477,7 +482,7 @@ a {
   min-width: 274px;
 }
 
-.btn-grey {
+.Footer .btn-grey {
   background: #768f9c;
   border: none;
   min-width: 81px;
