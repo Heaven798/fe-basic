@@ -158,6 +158,13 @@ a {
   margin-top: 20px;
 }
 
+.mg-lf10 {
+  margin-left: 10px;
+}
+.mg-btm80 {
+  margin-bottom: 80px;
+}
+
 /*--------Navigation------------------------------------------------------*/
 
 .Navigation a {
@@ -490,7 +497,7 @@ a {
   border-radius: 0px 5px 5px 0px;
 }
 
-.List .SecondText {
+.Footer .list .SecondText {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
