@@ -440,7 +440,7 @@ footer {
   background: #b3b3ba;
 }
 
-@media (max-width: 1440px) and (min-width: 1023px) {
+@media (max-width: 1440px) {
   .container {
     max-width: 1320px;
   }
@@ -449,7 +449,7 @@ footer {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 811px) {
+@media (max-width: 1024px) {
   .container {
     max-width: 904px;
   }
@@ -458,7 +458,7 @@ footer {
   }
 }
 
-@media (max-width: 810px) and (min-width: 551px) {
+@media (max-width: 810px) {
   .container {
     max-width: 648px;
   }
@@ -509,7 +509,7 @@ footer {
   }
 }
 
-@media (max-width: 550px) and (min-width: 376px) {
+@media (max-width: 550px) {
   .container {
     max-width: 648px;
   }
@@ -602,7 +602,7 @@ footer {
   }
 }
 
-@media (max-width: 375px) and (min-width: 0px) {
+@media (max-width: 375px) {
   .container {
     max-width: 315px;
   }
