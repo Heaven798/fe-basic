@@ -76,8 +76,20 @@ html {
   margin-right: 15px;
 }
 
+.mg-b15 {
+  margin-bottom: 15px;
+}
+
 .mg-t21 {
   margin-top: 21px;
+}
+
+.mg-t30 {
+  margin-top: 30px;
+}
+
+.mg-b30 {
+  margin-bottom: 30px;
 }
 
 .position-relative {
@@ -265,18 +277,84 @@ header .burger-menu .line3 {
   background-color: #323264;
   margin-top: 18px;
 }
-/*-----------Text----------------------------------------------------------------------*/
+/*-----------Forms----------------------------------------------------------------------*/
 
-.Text {
+.Forms {
   padding: 60px 0px 60px 0px;
 }
 
-.Text .TitleText {
+.Forms .Facebook:hover .LogoFacebook3 path {
+  fill: #f0145a;
+}
+
+.Forms .Facebook:hover .TextFacebook {
+  color: #f0145a;
+}
+
+.Forms a {
+  text-decoration: none;
+}
+
+.Forms .TextTelefon {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #46466e;
+}
+
+.Forms .TextEmail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #24a3ff;
+}
+
+.Forms .TextAdress {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+
+.Forms hr {
+  border-style: none;
+  height: 4px;
+  width: 650px;
+  background: #e6e6f0;
+}
+
+.Forms .TextFacebook {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  max-width: 105px;
+  margin-left: 10px;
+}
+
+.Forms .forms {
+  background: #f5f5fa;
+  border-radius: 12px;
+  /* max-width: 650px; */
+  padding: 30px;
+}
+
+.Forms .TextForm {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -284,75 +362,79 @@ header .burger-menu .line3 {
   text-fill-color: transparent;
 }
 
-/*-----------CollectionCard----------------------------------------------------------------------*/
-
-.CollectionCard {
-  padding-bottom: 60px;
-}
-
-.CollectionCard .Cards .photo {
-  border-radius: 12px;
-  object-fit: cover;
-  height: 400px;
-  width: 100%;
-}
-
-.CollectionCard .Cards .TitleText {
+.Forms .TextQuestion {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #323264;
-}
-
-.CollectionCard .Cards .SecondText {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: #b3b3ba;
 }
 
-.CollectionCard .Cards {
-  display: grid;
-  gap: 60px;
-  grid-template-columns: repeat(3, 1fr);
+.Forms textarea {
+  padding: 15px;
+  width: 590px;
+  height: 130px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: block;
+  outline: none;
 }
 
-.CollectionCard .Cards .CardHover {
-  transition: all 0.2s linear;
+.Forms input {
+  padding: 15px;
+  width: 590px;
+  height: 56px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: block;
+  outline: none;
 }
 
-.CollectionCard .Cards .CardHover:hover .TitleText {
-  color: #f0145a;
+.Forms input::placeholder,
+.Forms textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b3b3ba;
 }
 
-.CollectionCard .Cards .CardHover:hover .Check path {
-  stroke: #f0145a;
+.Forms input:focus,
+.Forms textarea:focus {
+  border: 1px solid #24a3ff;
 }
 
-.CollectionCard .Cards .BackgroundCircle {
-  width: 32px;
-  height: 32px;
-  background-color: #f5f5fa;
-  border-radius: 50%;
+.Forms button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  border-style: none;
+  padding: 18px 30px;
+  width: 590px;
+  height: 56px;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
 }
 
-.CollectionCard .Cards .Check {
-  margin: 7px 0px 0px 12px;
+.Forms button:hover {
+  background: #0085ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
 }
 
-/* .CollectionCard .Cards .Check2 {
-  position: absolute;
-  margin: 7px 0px 0px 12px;
-  opacity: 0%;
-} */
-
-/* .CollectionCard .Cards .CardHover:hover .Check2 path {
-  opacity: 100%;
-} */
+.Forms button:active {
+  background: #006ccf;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+}
 
 /*-----------Footer----------------------------------------------------------------------*/
 
@@ -438,321 +520,4 @@ footer {
 
 .Circle-grey {
   background: #b3b3ba;
-}
-
-@media (max-width: 1440px) {
-  .container {
-    max-width: 1320px;
-  }
-  .container-small {
-    max-width: 1080px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .container {
-    max-width: 904px;
-  }
-  .container-small {
-    max-width: 664px;
-  }
-}
-
-@media (max-width: 810px) {
-  .container {
-    max-width: 648px;
-  }
-  .container-small {
-    max-width: 648px;
-  }
-
-  .mobile-fcont {
-    max-width: 398px;
-    padding: 0px;
-  }
-  /*--------Header-----------------------------------------------------------------------*/
-
-  header .header-container {
-    grid-template-areas:
-      "Contacts"
-      "Logo"
-      "nav";
-  }
-
-  header .contacts {
-    justify-content: flex-start;
-    margin-bottom: 30px;
-  }
-
-  header .Logo {
-    margin-bottom: 30px;
-  }
-
-  header .nav-ul {
-    justify-content: flex-start;
-  }
-
-  /*------Cards----------------------------------------------------------------------------*/
-  .CollectionCard .Cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /*------Footer----------------------------------------------------------------------------*/
-  .Footer-container {
-    display: block;
-  }
-
-  .Footer-container .CopyrightText-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 550px) {
-  .container {
-    max-width: 648px;
-  }
-  .container-small {
-    max-width: 648px;
-  }
-
-  .mobile-fcont {
-    max-width: 398px;
-  }
-  /*--------Header-----------------------------------------------------------------------*/
-
-  header .AdressText {
-    display: none;
-  }
-
-  header .Circle2 {
-    display: none;
-  }
-
-  header .header-container {
-    grid-template-areas:
-      "Contacts"
-      "Logo"
-      "nav";
-  }
-
-  header .nav-ul {
-    display: block;
-    text-align: center;
-  }
-
-  header .contacts {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  header .Logo {
-    margin-bottom: 30px;
-  }
-
-  /*------Cards----------------------------------------------------------------------------*/
-  .CollectionCard .Cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  /*------Footer----------------------------------------------------------------------------*/
-  .Footer .Circle {
-    display: none;
-  }
-
-  .Footer-container {
-    display: block;
-  }
-
-  .Footer .Map {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .contacts-footer .LogoFacebook2-Link {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .contacts-footer {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .NavigationText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .TelText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .EmailText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .CopyrightText {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 375px) {
-  .container {
-    max-width: 315px;
-  }
-  .container-small {
-    max-width: 315px;
-  }
-
-  .mobile-hcont {
-    max-width: 345px;
-  }
-
-  /*------Header----------------------------------------------------------------------------*/
-
-  header {
-    padding: 0px;
-  }
-
-  header .contacts {
-    background: #f5f5fa;
-    margin-bottom: 0px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 10px 15px;
-  }
-
-  header .Circle {
-    display: none;
-  }
-
-  header .Logo,
-  header .burger-menu {
-    margin-top: 15px;
-  }
-
-  header .Logo .Logo-img {
-    max-height: 32px;
-  }
-
-  header .Logo .Logo-slash-img {
-    max-height: 28px;
-  }
-  header .Logo .LogoText {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #323264;
-  }
-
-  header .AdressText {
-    display: none;
-  }
-
-  header .LogoFacebook {
-    display: none;
-  }
-
-  header .nav {
-    display: none;
-  }
-
-  header .contacts {
-    justify-content: space-between;
-  }
-
-  header .header-container {
-    grid-template-areas:
-      "Contacts Contacts"
-      "Logo Burger";
-  }
-
-  header .burger-menu {
-    display: flex;
-  }
-
-  /*------Text----------------------------------------------------------------------------*/
-
-  .Text {
-    padding-top: 15px;
-  }
-
-  .Text .TitleText {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-
-  .Text .Description {
-    margin-top: 30px;
-  }
-
-  /*------Cards----------------------------------------------------------------------------*/
-  .CollectionCard .Cards .photo {
-    height: 300px;
-  }
-  .CollectionCard .Cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  /*------Footer----------------------------------------------------------------------------*/
-
-  .Footer .Circle {
-    display: none;
-  }
-
-  .Footer-container {
-    display: block;
-  }
-
-  .Footer .Map {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .contacts-footer .LogoFacebook2-Link {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .contacts-footer {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .NavigationText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .TelText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .EmailText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .CopyrightText {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-  }
 }
