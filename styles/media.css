@@ -1,0 +1,394 @@
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container-small {
+    max-width: 1080px;
+  }
+  /*--------Form-----------------------------------------------------------------------*/
+  .Forms textarea,
+  .Forms input,
+  .Forms button {
+    width: 450px;
+  }
+
+  .Forms hr {
+    width: 510px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .container {
+    max-width: 904px;
+  }
+  .container-small {
+    max-width: 934px;
+  }
+
+  /*--------Form-----------------------------------------------------------------------*/
+  .Forms textarea,
+  .Forms input,
+  .Forms button {
+    width: 362px;
+  }
+  .Forms .forms {
+    max-width: 422px;
+  }
+
+  .Forms hr {
+    width: 422px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 690px;
+  }
+  .container-small {
+    max-width: 690px;
+  }
+
+  /*--------Header-----------------------------------------------------------------------*/
+
+  header .header-container {
+    grid-template-areas:
+      "Contacts"
+      "Logo"
+      "nav";
+  }
+
+  header .contacts {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  header .Logo {
+    margin-bottom: 30px;
+  }
+
+  header .nav-ul {
+    justify-content: flex-start;
+  }
+  /*--------Form-----------------------------------------------------------------------*/
+  .Forms .Forms-container {
+    display: block;
+  }
+
+  .Forms .forms {
+    max-width: 648px;
+  }
+
+  .Forms .Contact {
+    margin-bottom: 60px;
+  }
+
+  .Forms textarea,
+  .Forms input,
+  .Forms button {
+    width: 588px;
+  }
+  .Forms hr {
+    width: 648px;
+  }
+
+  /*------Footer----------------------------------------------------------------------------*/
+  .Footer-container {
+    display: block;
+  }
+
+  .Footer-container .CopyrightText-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 690px) {
+  .container {
+    max-width: 430px;
+  }
+  .container-small {
+    max-width: 430px;
+  }
+
+  .mobile-fcont {
+    max-width: 398px;
+  }
+  /*--------Header-----------------------------------------------------------------------*/
+
+  header .AdressText {
+    display: none;
+  }
+
+  header .Circle2 {
+    display: none;
+  }
+
+  header .header-container {
+    grid-template-areas:
+      "Contacts"
+      "Logo"
+      "nav";
+  }
+
+  header .NavText {
+    margin-right: 0px;
+  }
+
+  header .nav-ul {
+    display: block;
+    text-align: center;
+  }
+
+  header .contacts {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  header .Logo {
+    margin-bottom: 30px;
+  }
+
+  /*--------Form-----------------------------------------------------------------------*/
+  .Forms .Forms-container {
+    display: block;
+  }
+
+  .Forms .forms {
+    max-width: 400px;
+  }
+
+  .Forms .Contact {
+    margin-bottom: 60px;
+  }
+
+  .Forms .TextForm {
+  }
+
+  .Forms textarea,
+  .Forms input,
+  .Forms button {
+    width: 330px;
+  }
+  .Forms hr {
+    width: 400px;
+  }
+
+  /*------Footer----------------------------------------------------------------------------*/
+  .Footer .Circle {
+    display: none;
+  }
+
+  .Footer-container {
+    display: block;
+  }
+
+  .Footer .Map {
+    display: block;
+    text-align: center;
+  }
+
+  .Footer .contacts-footer .LogoFacebook2-Link {
+    display: block;
+    text-align: center;
+  }
+
+  .Footer .contacts-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .Footer .NavigationText {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .Footer .TelText {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .Footer .EmailText {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .Footer .CopyrightText {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    max-width: 315px;
+  }
+  .container-small {
+    max-width: 345px;
+  }
+
+  .mobile-hcont {
+    max-width: 345px;
+  }
+
+  /*------Header----------------------------------------------------------------------------*/
+
+  header {
+    padding: 0px;
+  }
+
+  header .Logo {
+    margin-bottom: 0px;
+  }
+
+  header .contacts {
+    background: #f5f5fa;
+    margin-bottom: 0px;
+    margin-left: -60px;
+    margin-right: -60px;
+    padding: 10px 15px;
+  }
+
+  header .Circle {
+    display: none;
+  }
+
+  header .Logo,
+  header .burger-menu {
+    margin-top: 15px;
+  }
+
+  header .Logo .Logo-img {
+    max-height: 32px;
+  }
+
+  header .Logo .Logo-slash-img {
+    max-height: 28px;
+  }
+  header .Logo .LogoText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323264;
+  }
+
+  header .AdressText {
+    display: none;
+  }
+
+  header .LogoFacebook {
+    display: none;
+  }
+
+  header .nav {
+    display: none;
+  }
+
+  header .contacts {
+    justify-content: space-between;
+  }
+
+  header .header-container {
+    grid-template-areas:
+      "Contacts Contacts"
+      "Logo Burger";
+  }
+
+  header .burger-menu {
+    display: flex;
+  }
+  /*--------Form-----------------------------------------------------------------------*/
+  .Forms {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .Forms .Forms-container {
+    display: block;
+  }
+
+  .Forms .forms {
+    max-width: 315px;
+  }
+
+  .Forms .Contact {
+    margin-bottom: 30px;
+  }
+
+  .Forms textarea,
+  .Forms input,
+  .Forms button {
+    width: 255px;
+  }
+  .Forms hr {
+    width: 315px;
+  }
+
+  /*------Footer----------------------------------------------------------------------------*/
+
+  .Footer .Circle {
+    display: none;
+  }
+
+  .Footer-container {
+    display: block;
+  }
+
+  .Footer .Map {
+    display: block;
+    text-align: center;
+  }
+
+  .Footer .contacts-footer .LogoFacebook2-Link {
+    display: block;
+    text-align: center;
+  }
+
+  .Footer .contacts-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .Footer .NavigationText {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .Footer .TelText {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .Footer .EmailText {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .Footer .CopyrightText {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 410px) {
+  header .contacts {
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+}
+
+@media (max-width: 395px) {
+  header .contacts {
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+}
+
+@media (max-width: 375px) {
+  header .contacts {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
