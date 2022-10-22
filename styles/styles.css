@@ -18,7 +18,6 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1630px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 15px 0px 15px;
@@ -26,7 +25,6 @@ html {
 
 .container-small {
   width: 100%;
-  max-width: 1390px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 15px 0px 15px;
@@ -44,12 +42,28 @@ html {
   display: flex;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.gap30 {
+  gap: 30px;
+}
+
+.mg-t30 {
+  margin-top: 30px;
+}
+
+.mg-t15 {
+  margin-top: 15px;
 }
 
 .mg-b15 {
@@ -104,16 +118,30 @@ html {
   list-style: none;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 /*-----------Header----------------------------------------------------------------------*/
 
 header {
+  position: relative;
   padding-top: 50px;
+  padding-bottom: 60px;
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
 }
 
 header .LogoText {
   font-weight: 400;
   font-size: 36px;
   line-height: 44px;
+  color: #fff;
 }
 
 header a {
@@ -127,7 +155,7 @@ header .contacts .LanguageText {
   line-height: 15px;
   padding: 5px 7px;
   /* letter-spacing: 1px; */
-  color: #b3b3ba;
+  color: #fff;
 }
 header .contacts .Language {
   min-width: 33px;
@@ -155,6 +183,7 @@ header .contacts .Language:hover {
 
 header .LogoFacebook path {
   transition: all 0.2s linear;
+  fill: #fff;
 }
 
 header .LogoFacebook:hover path {
@@ -180,7 +209,7 @@ header .contacts .AdressText {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #b3b3ba;
+  color: #fff;
 }
 
 header .contacts .TelefonText {
@@ -189,7 +218,7 @@ header .contacts .TelefonText {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #b3b3ba;
+  color: #fff;
 }
 
 header .nav {
@@ -203,7 +232,7 @@ header .nav .NavText {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #24a3ff;
+  color: #fff;
 }
 
 header .nav .NavText:hover {
@@ -277,84 +306,31 @@ header .burger-menu .line3 {
   background-color: #323264;
   margin-top: 18px;
 }
-/*-----------Forms----------------------------------------------------------------------*/
 
-.Forms {
-  padding: 60px 0px 60px 0px;
+header .basket-background {
+  width: 92px;
+  height: 92px;
+  background-color: #fff;
+  border-radius: 24px;
+  margin-bottom: 28px;
 }
 
-.Forms .Facebook:hover .LogoFacebook3 path {
-  fill: #f0145a;
+header .basket {
+  margin-top: 14px;
+  margin-left: 14px;
 }
 
-.Forms .Facebook:hover .TextFacebook {
-  color: #f0145a;
+header .Consultation {
+  padding-top: 60px;
 }
 
-.Forms a {
-  text-decoration: none;
-}
-
-.Forms .TextTelefon {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 30px;
-  color: #46466e;
-}
-
-.Forms .TextEmail {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 30px;
-  color: #24a3ff;
-}
-
-.Forms .TextAdress {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 30px;
-  color: #323264;
-}
-
-.Forms hr {
-  border-style: none;
-  height: 4px;
-  width: 650px;
-  background: #e6e6f0;
-}
-
-.Forms .TextFacebook {
+header .Consultation .TitleText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24a3ff;
-  max-width: 105px;
-  margin-left: 10px;
-}
-
-.Forms .forms {
-  background: #f5f5fa;
-  border-radius: 12px;
-  /* max-width: 650px; */
-  padding: 30px;
-}
-
-.Forms .TextForm {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -362,7 +338,106 @@ header .burger-menu .line3 {
   text-fill-color: transparent;
 }
 
-.Forms .TextQuestion {
+header .Consultation .SecondText {
+  margin-top: 28px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .Consultation .Wrap-SecondText {
+  text-align: center;
+  max-width: 1360px;
+}
+
+header .button {
+  margin-top: 28px;
+  margin-bottom: 60px;
+  padding: 18px 30px;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+header hr {
+  max-width: 1360px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+header .Advantage {
+  padding-top: 30px;
+}
+
+header .Advantage .TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+header .Advantage .SecondText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  max-width: 636px;
+}
+
+header .Advantage li::marker {
+  color: #f0145a;
+}
+
+header::before {
+  display: block;
+  background: #cacadb;
+  height: 10px;
+  width: calc(100% - 40px);
+  border-radius: 0px 0px 12px 12px;
+  top: 100%;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  margin-left: 20px;
+}
+
+header::after {
+  background: #e7e7f2;
+  height: 10px;
+  width: calc(100% - 80px);
+  top: calc(100% + 10px);
+  border-radius: 0px 0px 12px 12px;
+  z-index: -2;
+  content: "";
+  position: absolute;
+  margin-left: 40px;
+}
+
+/*-----------Publication----------------------------------------------------------------------*/
+
+.Publication {
+  margin-top: 80px;
+  padding-top: 30px;
+  background: #f5f5fa;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.Publication .PublicationText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -370,70 +445,100 @@ header .burger-menu .line3 {
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #24a3ff;
+  margin-right: 5px;
+}
+
+.Publication .TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+.Publication .Card {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.Publication .Card1 {
+  grid-area: Card1;
+}
+.Publication .Card2 {
+  grid-area: Card2;
+}
+.Publication .Card3 {
+  grid-area: Card3;
+}
+
+.Publication .CollectionCards {
+  grid-template-areas: "Card1 Card2 Card3";
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 30px;
+}
+
+.Publication .Card .Text .Card-TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+  margin-bottom: 15px;
+}
+
+.Publication .Card .Text .DateText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: #b3b3ba;
+  margin-bottom: 15px;
 }
 
-.Forms textarea {
-  padding: 15px;
-  width: 590px;
-  height: 130px;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  display: block;
-  outline: none;
+.Publication .Card .Text {
+  padding: 30px;
 }
 
-.Forms input {
-  padding: 15px;
-  width: 590px;
-  height: 56px;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  display: block;
-  outline: none;
+.Publication .Card .Text hr {
+  height: 4px;
+  width: 100%;
+  background: #e6e6f0;
+  margin-top: 0px;
 }
 
-.Forms input::placeholder,
-.Forms textarea::placeholder {
+.Publication .Card .Text .DescriptionText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #b3b3ba;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 15px;
 }
 
-.Forms input:focus,
-.Forms textarea:focus {
-  border: 1px solid #24a3ff;
+.Publication .Card .photo {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
 }
 
-.Forms button {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #ffffff;
-  border-style: none;
-  padding: 18px 30px;
-  width: 590px;
-  height: 56px;
-  background: #24a3ff;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-}
-
-.Forms button:hover {
-  background: #0085ff;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-}
-
-.Forms button:active {
-  background: #006ccf;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
+.Publication hr {
+  margin-top: 30px;
+  height: 2px;
+  background: #e6e6f0;
+  border: none;
 }
 
 /*-----------Footer----------------------------------------------------------------------*/
@@ -471,7 +576,6 @@ footer {
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   color: #24a3ff;
 }
 

@@ -1,3 +1,11 @@
+@media (max-width: 3000px) {
+  .container {
+    max-width: 1630px;
+  }
+  .container-small {
+    max-width: 1390px;
+  }
+}
 @media (max-width: 1440px) {
   .container {
     max-width: 1320px;
@@ -5,15 +13,11 @@
   .container-small {
     max-width: 1080px;
   }
-  /*--------Form-----------------------------------------------------------------------*/
-  .Forms textarea,
-  .Forms input,
-  .Forms button {
-    width: 450px;
-  }
 
-  .Forms hr {
-    width: 510px;
+  /*--------Header-----------------------------------------------------------------------*/
+
+  header .Advantage .SecondText {
+    max-width: 495px;
   }
 }
 
@@ -25,18 +29,10 @@
     max-width: 934px;
   }
 
-  /*--------Form-----------------------------------------------------------------------*/
-  .Forms textarea,
-  .Forms input,
-  .Forms button {
-    width: 362px;
-  }
-  .Forms .forms {
-    max-width: 422px;
-  }
+  /*--------Header-----------------------------------------------------------------------*/
 
-  .Forms hr {
-    width: 422px;
+  header .Advantage .SecondText {
+    max-width: 408px;
   }
 }
 
@@ -50,6 +46,10 @@
 
   /*--------Header-----------------------------------------------------------------------*/
 
+  header .Advantage .SecondText {
+    max-width: 280px;
+  }
+
   header .header-container {
     grid-template-areas:
       "Contacts"
@@ -69,28 +69,13 @@
   header .nav-ul {
     justify-content: flex-start;
   }
-  /*--------Form-----------------------------------------------------------------------*/
-  .Forms .Forms-container {
-    display: block;
+  /*-----Publication----------------------------------------------------------------------------*/
+  .Publication .CollectionCards {
+    grid-template-areas:
+      "Card1 Card2"
+      "Card3 Card3";
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .Forms .forms {
-    max-width: 648px;
-  }
-
-  .Forms .Contact {
-    margin-bottom: 60px;
-  }
-
-  .Forms textarea,
-  .Forms input,
-  .Forms button {
-    width: 588px;
-  }
-  .Forms hr {
-    width: 648px;
-  }
-
   /*------Footer----------------------------------------------------------------------------*/
   .Footer-container {
     display: block;
@@ -103,124 +88,7 @@
   }
 }
 
-@media (max-width: 690px) {
-  .container {
-    max-width: 430px;
-  }
-  .container-small {
-    max-width: 430px;
-  }
-
-  .mobile-fcont {
-    max-width: 398px;
-  }
-  /*--------Header-----------------------------------------------------------------------*/
-
-  header .AdressText {
-    display: none;
-  }
-
-  header .Circle2 {
-    display: none;
-  }
-
-  header .header-container {
-    grid-template-areas:
-      "Contacts"
-      "Logo"
-      "nav";
-  }
-
-  header .NavText {
-    margin-right: 0px;
-  }
-
-  header .nav-ul {
-    display: block;
-    text-align: center;
-  }
-
-  header .contacts {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  header .Logo {
-    margin-bottom: 30px;
-  }
-
-  /*--------Form-----------------------------------------------------------------------*/
-  .Forms .Forms-container {
-    display: block;
-  }
-
-  .Forms .forms {
-    max-width: 400px;
-  }
-
-  .Forms .Contact {
-    margin-bottom: 60px;
-  }
-
-  .Forms .TextForm {
-  }
-
-  .Forms textarea,
-  .Forms input,
-  .Forms button {
-    width: 330px;
-  }
-  .Forms hr {
-    width: 400px;
-  }
-
-  /*------Footer----------------------------------------------------------------------------*/
-  .Footer .Circle {
-    display: none;
-  }
-
-  .Footer-container {
-    display: block;
-  }
-
-  .Footer .Map {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .contacts-footer .LogoFacebook2-Link {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .contacts-footer {
-    display: block;
-    text-align: center;
-  }
-
-  .Footer .NavigationText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .TelText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .EmailText {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .Footer .CopyrightText {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 460px) {
+@media (max-width: 760px) {
   .container {
     max-width: 315px;
   }
@@ -236,6 +104,7 @@
 
   header {
     padding: 0px;
+    padding-bottom: 60px;
   }
 
   header .Logo {
@@ -243,7 +112,7 @@
   }
 
   header .contacts {
-    background: #f5f5fa;
+    background: rgba(245, 245, 250, 0.2);
     margin-bottom: 0px;
     margin-left: -60px;
     margin-right: -60px;
@@ -272,7 +141,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #323264;
+    color: #fff;
   }
 
   header .AdressText {
@@ -300,30 +169,59 @@
   header .burger-menu {
     display: flex;
   }
-  /*--------Form-----------------------------------------------------------------------*/
-  .Forms {
-    padding: 30px 0px 30px 0px;
+
+  header .burger-menu .line1,
+  header .burger-menu .line2,
+  header .burger-menu .line3 {
+    background-color: #fff;
   }
 
-  .Forms .Forms-container {
+  header .Advantage .SecondText {
+    max-width: 308px;
+  }
+
+  header .Advantage .Nav {
     display: block;
   }
 
-  .Forms .forms {
-    max-width: 315px;
+  header .Advantage .Nav .SecondText {
+    margin-left: 20px;
   }
 
-  .Forms .Contact {
-    margin-bottom: 30px;
+  header .Consultation .TitleText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
-  .Forms textarea,
-  .Forms input,
-  .Forms button {
-    width: 255px;
+  /*-----Publication----------------------------------------------------------------------------*/
+  .Publication .CollectionCards {
+    grid-template-areas:
+      "Card1"
+      "Card2"
+      "Card3";
+    grid-template-columns: 1fr;
   }
-  .Forms hr {
-    width: 315px;
+
+  .Publication .TitleText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
   /*------Footer----------------------------------------------------------------------------*/
@@ -371,18 +269,9 @@
     text-align: center;
     margin-top: 30px;
   }
-}
-@media (max-width: 410px) {
-  header .contacts {
-    margin-left: -45px;
-    margin-right: -45px;
-  }
-}
 
-@media (max-width: 395px) {
-  header .contacts {
-    margin-left: -45px;
-    margin-right: -45px;
+  .Footer-container .CopyrightText-container {
+    margin-top: 0px;
   }
 }
 
