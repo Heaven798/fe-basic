@@ -5,19 +5,62 @@
   .container-small {
     max-width: 1390px;
   }
+
+  .Clients .Clients-container {
+    max-width: 1920px;
+    padding: 0px;
+  }
+
+  /*-----Logo-section----------------------------------------------------------------------------*/
+
+  .Logo-section {
+    aspect-ratio: 1/0.521;
+    min-height: 0vh;
+    background-size: contain;
+  }
 }
 @media (max-width: 1440px) {
   .container {
     max-width: 1320px;
   }
   .container-small {
-    max-width: 1080px;
+    max-width: 1110px;
   }
 
   /*--------Header-----------------------------------------------------------------------*/
 
   header .Advantage .SecondText {
     max-width: 495px;
+  }
+
+  /*--------Description-section-----------------------------------------------------------------------*/
+  .Description-section .tab-pane {
+    max-width: 581px;
+  }
+
+  /*-----Logo-section----------------------------------------------------------------------------*/
+
+  .Logo-section {
+    aspect-ratio: 1/0.555;
+    min-height: 0vh;
+    background-size: contain;
+  }
+
+  /*-----------Clients----------------------------------------------------------------------*/
+
+  .Clients .partners-logo {
+    border-radius: 0px;
+  }
+
+  /*-----------Clients----------------------------------------------------------------------*/
+  .Publication {
+    margin-top: 0px;
+  }
+
+  /*-----------Team----------------------------------------------------------------------*/
+
+  .Team .item-container {
+    max-height: 390px;
   }
 }
 
@@ -33,6 +76,23 @@
 
   header .Advantage .SecondText {
     max-width: 408px;
+  }
+
+  /*-----Logo-section----------------------------------------------------------------------------*/
+
+  .Logo-section {
+    aspect-ratio: 1/0.75;
+    background-size: contain;
+  }
+
+  /*--------Description-section-----------------------------------------------------------------------*/
+  .Description-section .tab-pane {
+    max-width: 405px;
+  }
+  /*-----------Team----------------------------------------------------------------------*/
+
+  .Team .item-container {
+    max-height: 768px;
   }
 }
 
@@ -50,7 +110,7 @@
     max-width: 280px;
   }
 
-  header .header-container {
+  .Header-section .header-container {
     grid-template-areas:
       "Contacts"
       "Logo"
@@ -69,6 +129,40 @@
   header .nav-ul {
     justify-content: flex-start;
   }
+
+  /*--------Description-section-----------------------------------------------------------------------*/
+
+  .Description-section .Pills {
+    overflow-y: hidden;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .Description-section .nav-pills {
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .Description-section .nav-SecondText {
+  }
+
+  .Description-section .Description hr {
+    width: 648px;
+    height: 4px;
+  }
+
+  .Description-section .tab-pane {
+    max-width: 648px;
+  }
+
+  /*-----Logo-section----------------------------------------------------------------------------*/
+
+  .Logo-section {
+    aspect-ratio: 1/1.334;
+    background-size: cover;
+  }
+
   /*-----Publication----------------------------------------------------------------------------*/
   .Publication .CollectionCards {
     grid-template-areas:
@@ -76,6 +170,31 @@
       "Card3 Card3";
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /*-----Clients----------------------------------------------------------------------------*/
+  .Clients .partner {
+    max-width: 33.3%;
+  }
+
+  /*-----Team----------------------------------------------------------------------------*/
+
+  .Team .item-container {
+    max-height: 936px;
+    display: block;
+  }
+
+  .Team .item .Slide-Photo {
+    max-height: 500px;
+    max-width: none;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  /*-----Cards-section----------------------------------------------------------------------------*/
+  .Cards-section .Cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /*------Footer----------------------------------------------------------------------------*/
   .Footer-container {
     display: block;
@@ -90,7 +209,7 @@
 
 @media (max-width: 760px) {
   .container {
-    max-width: 315px;
+    max-width: 345px;
   }
   .container-small {
     max-width: 345px;
@@ -102,16 +221,17 @@
 
   /*------Header----------------------------------------------------------------------------*/
 
-  header {
+  .Header-section {
     padding: 0px;
+    padding-top: 0px;
     padding-bottom: 60px;
   }
 
-  header .Logo {
+  .Header-section .Logo {
     margin-bottom: 0px;
   }
 
-  header .contacts {
+  .Header-section .contacts {
     background: rgba(245, 245, 250, 0.2);
     margin-bottom: 0px;
     margin-left: -60px;
@@ -119,23 +239,23 @@
     padding: 10px 15px;
   }
 
-  header .Circle {
+  .Header-section .Circle {
     display: none;
   }
 
-  header .Logo,
-  header .burger-menu {
+  .Header-section .Logo,
+  .Header-section .burger-menu {
     margin-top: 15px;
   }
 
-  header .Logo .Logo-img {
+  .Header-section .Logo .Logo-img {
     max-height: 32px;
   }
 
-  header .Logo .Logo-slash-img {
+  .Header-section .Logo .Logo-slash-img {
     max-height: 28px;
   }
-  header .Logo .LogoText {
+  .Header-section .Logo .LogoText {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
@@ -144,51 +264,51 @@
     color: #fff;
   }
 
-  header .AdressText {
+  .Header-section .AdressText {
     display: none;
   }
 
-  header .LogoFacebook {
+  .Header-section .LogoFacebook {
     display: none;
   }
 
-  header .nav {
+  .Header-section .nav {
     display: none;
   }
 
-  header .contacts {
+  .Header-section .contacts {
     justify-content: space-between;
   }
 
-  header .header-container {
+  .Header-section .header-container {
     grid-template-areas:
       "Contacts Contacts"
       "Logo Burger";
   }
 
-  header .burger-menu {
+  .Header-section .burger-menu {
     display: flex;
   }
 
-  header .burger-menu .line1,
-  header .burger-menu .line2,
-  header .burger-menu .line3 {
+  .Header-section .burger-menu .line1,
+  .Header-section .burger-menu .line2,
+  .Header-section .burger-menu .line3 {
     background-color: #fff;
   }
 
-  header .Advantage .SecondText {
+  .Header-section .Advantage .SecondText {
     max-width: 308px;
   }
 
-  header .Advantage .Nav {
+  .Header-section .Advantage .Nav {
     display: block;
   }
 
-  header .Advantage .Nav .SecondText {
+  .Header-section .Advantage .Nav .SecondText {
     margin-left: 20px;
   }
 
-  header .Consultation .TitleText {
+  .Header-section .Consultation .TitleText {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
@@ -200,6 +320,18 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+
+  /*-----Logo-section----------------------------------------------------------------------------*/
+
+  .Logo-section .SecondText {
+    max-width: 315px;
+  }
+
+  /*-----Publication----------------------------------------------------------------------------*/
+
+  .Logo-section {
+    aspect-ratio: 1/1.6;
   }
 
   /*-----Publication----------------------------------------------------------------------------*/
@@ -222,6 +354,94 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+
+  /*-----Service----------------------------------------------------------------------------*/
+  .Cards-section .TitleText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .Cards-section .Cards {
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  /*--------Description-section-----------------------------------------------------------------------*/
+
+  .Description-section {
+    padding-top: 30px;
+  }
+
+  .Description-section .nav-SecondText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .Description-section .Description hr {
+    width: 315px;
+  }
+
+  .Description-section .nav-pills .TitleText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .Description-section .nav-pills {
+    gap: 30px;
+  }
+
+  /*-----Clients----------------------------------------------------------------------------*/
+  .Clients .partner {
+    max-width: 100%;
+  }
+
+  .Clients .partners-logo {
+    max-height: 720px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /*-----Team----------------------------------------------------------------------------*/
+
+  .Team .item-container {
+    max-height: 1087px;
+    display: block;
+  }
+
+  .Team .item .Slide-Photo {
+    height: 500px;
+    max-width: 315px;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  .Team .Slide-TitleText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  /*-----Cards-section----------------------------------------------------------------------------*/
+
+  .Cards-section {
+    padding-top: 30px;
+  }
+
+  .Cards-section .Cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /*------Footer----------------------------------------------------------------------------*/
@@ -276,7 +496,7 @@
 }
 
 @media (max-width: 375px) {
-  header .contacts {
+  .Header-section .contacts {
     margin-left: -15px;
     margin-right: -15px;
   }

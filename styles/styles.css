@@ -106,6 +106,10 @@ html {
   margin-bottom: 30px;
 }
 
+.mg-t10 {
+  margin-top: 10px;
+}
+
 .position-relative {
   position: relative;
 }
@@ -122,12 +126,10 @@ html {
   justify-content: center;
 }
 
-/*-----------Header----------------------------------------------------------------------*/
+/*-----------.Wrap-section----------------------------------------------------------------------*/
 
-header {
+.wrap-section {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 60px;
   background: linear-gradient(
     228.57deg,
     #323264 11.93%,
@@ -137,18 +139,30 @@ header {
   border-radius: 0px 0px 12px 12px;
 }
 
-header .LogoText {
+/*-----------.Header-section----------------------------------------------------------------------*/
+
+.Header-section {
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.Header-section .LogoText {
   font-weight: 400;
   font-size: 36px;
   line-height: 44px;
   color: #fff;
 }
 
-header a {
+.Header-section a {
   text-decoration: none;
 }
 
-header .contacts .LanguageText {
+.Header-section .contacts .LanguageText {
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
@@ -157,40 +171,40 @@ header .contacts .LanguageText {
   /* letter-spacing: 1px; */
   color: #fff;
 }
-header .contacts .Language {
+.Header-section .contacts .Language {
   min-width: 33px;
   min-height: 25px;
   transition: all 0.2s linear;
 }
 
-header .contacts .Language-Active {
+.Header-section .contacts .Language-Active {
   background: #f0145a;
   border-radius: 8px;
   color: #fff;
 }
 
-header .contacts .Language:hover {
+.Header-section .contacts .Language:hover {
   border-radius: 8px;
   background: #f5f5fa;
   color: #b3b3ba;
 }
 
-/*header .contacts .Language:active {
+/*.Header-section .contacts .Language:active {
   background: #f0145a;
   border-radius: 8px;
   color: #fff;
 } */
 
-header .LogoFacebook path {
+.Header-section .LogoFacebook path {
   transition: all 0.2s linear;
   fill: #fff;
 }
 
-header .LogoFacebook:hover path {
+.Header-section .LogoFacebook:hover path {
   fill: #f0145a;
 }
 
-header img {
+.Header-section img {
   display: block;
 }
 
@@ -203,7 +217,7 @@ header img {
   margin: 0px 6px;
 }
 
-header .contacts .AdressText {
+.Header-section .contacts .AdressText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -212,7 +226,7 @@ header .contacts .AdressText {
   color: #fff;
 }
 
-header .contacts .TelefonText {
+.Header-section .contacts .TelefonText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -221,11 +235,11 @@ header .contacts .TelefonText {
   color: #fff;
 }
 
-header .nav {
+.Header-section .nav {
   margin-top: 16px;
 }
 
-header .nav .NavText {
+.Header-section .nav .NavText {
   text-decoration: none;
   font-family: "Montserrat";
   font-style: normal;
@@ -235,55 +249,46 @@ header .nav .NavText {
   color: #fff;
 }
 
-header .nav .NavText:hover {
+.Header-section .nav .NavText:hover {
   border-bottom: 2px solid #24a3ff;
   color: #24a3ff;
 }
 
-header .nav .NavText-Active {
+.Header-section .nav .NavText-Active {
   border-bottom: 2px solid #f0145a;
   color: #f0145a;
 }
 
-/* header .nav .NavText:active {
+/* .Header-section .nav .NavText:active {
   border-bottom: 2px solid #f0145a;
   color: #f0145a;
 } */
 
-header .header-container {
+.Header-section .header-container {
   grid-template-areas:
     "Logo Contacts"
     "Logo nav";
 }
 
-header .burger-menu {
+.Header-section .burger-menu {
   grid-area: Burger;
 }
 
-header .Logo {
+.Header-section .Logo {
   grid-area: Logo;
 }
-header .contacts {
+.Header-section .contacts {
   grid-area: Contacts;
 }
-header .nav-ul {
+.Header-section .nav-ul {
   grid-area: nav;
 }
 
-header .header-mobile .Logo-mobile .Logo-mobileText {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #323264;
-}
-
-header .burger-menu {
+.Header-section .burger-menu {
   display: none;
 }
 
-header .burger-menu .line1 {
+.Header-section .burger-menu .line1 {
   position: absolute;
   width: 18px;
   height: 2px;
@@ -291,7 +296,7 @@ header .burger-menu .line1 {
   margin-top: 6px;
 }
 
-header .burger-menu .line2 {
+.Header-section .burger-menu .line2 {
   position: absolute;
   width: 18px;
   height: 2px;
@@ -299,7 +304,7 @@ header .burger-menu .line2 {
   margin-top: 12px;
 }
 
-header .burger-menu .line3 {
+.Header-section .burger-menu .line3 {
   position: absolute;
   width: 18px;
   height: 2px;
@@ -307,7 +312,7 @@ header .burger-menu .line3 {
   margin-top: 18px;
 }
 
-header .basket-background {
+.Header-section .basket-background {
   width: 92px;
   height: 92px;
   background-color: #fff;
@@ -315,16 +320,16 @@ header .basket-background {
   margin-bottom: 28px;
 }
 
-header .basket {
+.Header-section .basket {
   margin-top: 14px;
   margin-left: 14px;
 }
 
-header .Consultation {
+.Header-section .Consultation {
   padding-top: 60px;
 }
 
-header .Consultation .TitleText {
+.Header-section .Consultation .TitleText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -338,7 +343,7 @@ header .Consultation .TitleText {
   text-fill-color: transparent;
 }
 
-header .Consultation .SecondText {
+.Header-section .Consultation .SecondText {
   margin-top: 28px;
   font-family: "Montserrat";
   font-style: normal;
@@ -349,12 +354,12 @@ header .Consultation .SecondText {
   color: #ffffff;
 }
 
-header .Consultation .Wrap-SecondText {
+.Header-section .Consultation .Wrap-SecondText {
   text-align: center;
   max-width: 1360px;
 }
 
-header .button {
+.Header-section .button {
   margin-top: 28px;
   margin-bottom: 60px;
   padding: 18px 30px;
@@ -370,17 +375,17 @@ header .button {
   color: #fff;
 }
 
-header hr {
+.Header-section hr {
   max-width: 1360px;
   height: 4px;
   background: rgba(255, 255, 255, 0.5);
 }
 
-header .Advantage {
+.Header-section .Advantage {
   padding-top: 30px;
 }
 
-header .Advantage .TitleText {
+.Header-section .Advantage .TitleText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -389,7 +394,7 @@ header .Advantage .TitleText {
   color: #ffffff;
 }
 
-header .Advantage .SecondText {
+.Header-section .Advantage .SecondText {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -399,11 +404,11 @@ header .Advantage .SecondText {
   max-width: 636px;
 }
 
-header .Advantage li::marker {
+.Header-section .Advantage li::marker {
   color: #f0145a;
 }
 
-header::before {
+.wrap-section::before {
   display: block;
   background: #cacadb;
   height: 10px;
@@ -416,7 +421,7 @@ header::before {
   margin-left: 20px;
 }
 
-header::after {
+.wrap-section::after {
   background: #e7e7f2;
   height: 10px;
   width: calc(100% - 80px);
@@ -428,6 +433,410 @@ header::after {
   margin-left: 40px;
 }
 
+/*-----------------Logo-section---------------------------------------------------------------*/
+
+.Logo-section {
+  position: relative;
+  aspect-ratio: 1/1.6;
+  background: url("../images/Symbol.png") no-repeat center/cover;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo-section .SecondText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #ffffff;
+}
+
+.Logo-section .Logo-Сircle {
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  border: 2px solid #b3b3ba;
+  border-radius: 50%;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Logo-section .Logo-checked {
+  margin-top: 14px;
+}
+
+.Logo-section .Logo-checked path {
+  opacity: 0px;
+}
+
+.Logo-section .Logo-Сircle:hover .Logo-checked path {
+  stroke: #f0145a;
+}
+
+.Logo-section .Logo-Сircle:hover {
+  border: 2px solid #f0145a;
+}
+
+/*-----------------.Header-section-------------------------------------------Description-------*/
+
+.Description-section {
+  padding-top: 60px;
+}
+
+.Description-section .nav-SecondText {
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #b3b3ba;
+  background: none;
+  border: none;
+  white-space: nowrap;
+}
+
+.Description-section .nav-SecondText.active {
+  background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.Description-section .nav-SecondText:hover {
+  color: #f0145a;
+}
+
+.Description-section hr {
+  width: 4px;
+  height: 303px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+.Description-section .nav-pills .Pills {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.Description-section .nav-pills .TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.Description-section .nav-pills .SecondText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #ffffff;
+  max-width: 861px;
+  margin-top: 30px;
+}
+
+.Description-section .tab-pane {
+  display: none;
+  max-width: 861px;
+}
+
+.Description-section .tab-pane.show {
+  display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*----------Cards-section--------------------------------------------------------------*/
+
+.Cards-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.Cards-section .Service .ServiceText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  margin-right: 5px;
+}
+
+.Cards-section .Service:hover .Service-Checked path {
+  stroke: #f0145a;
+}
+
+.Cards-section .Service:hover .ServiceText {
+  color: #f0145a;
+}
+
+.Cards-section .TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.Cards-section .Square {
+  display: block;
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.Cards-section .Card .Square img {
+  padding-top: 14px;
+  padding-left: 14px;
+}
+
+.Cards-section .Cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+/* .Header-section .Cards-section.Card{
+  max-width: 1404;
+} */
+
+.Cards-section .Cards .Card-TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24a3ff;
+  margin-top: 30px;
+}
+
+.Cards-section .Cards .SecondText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+/*-----------Team----------------------------------------------------------------------*/
+
+.Team {
+  padding-top: 60px;
+}
+
+.Team .SlideText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  margin-right: 5px;
+}
+
+.Team .Slide-TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 5px;
+}
+
+.Team .Slide-SecondText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+  margin-top: 30px;
+}
+
+.Team .Slide-ThirdText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+  margin-top: 6px;
+}
+
+.Team .item {
+  background: #f5f5fa;
+  border-radius: 12px;
+}
+
+.Team .item-container {
+  display: flex;
+  max-height: 344px;
+}
+
+.Team .item .wrap {
+  padding: 30px;
+}
+
+.Team .item .Slide-Photo {
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.slick-dots {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: -45px;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+  opacity: 0.25;
+  color: #24a3ff;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #24a3ff;
+}
+/*-----------Clients----------------------------------------------------------------------*/
+.Clients {
+  padding-top: 60px;
+}
+
+.Clients .ClientsTitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Clients .partners-logo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.Clients .partner {
+  width: 100%;
+  max-width: 25%;
+  height: 120px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.Clients .partners-logo .partner img {
+  max-height: 100%;
+}
+
+.Clients .partners-logo .partner.hillel {
+  background-color: #1c4280;
+}
+
+.Clients .partners-logo .partner.wannabiz {
+  background: #143646;
+}
+.Clients .partners-logo .partner.tapgerine {
+  background: linear-gradient(0deg, #f48b30, #f48b30), #f48b30;
+}
+
+.Clients .partners-logo .partner.threedlook {
+  background: #9e4dc3;
+}
+.Clients .partners-logo .partner.orangear {
+  background: #fd9339;
+}
+
+.Clients .partners-logo .partner.adtelligent {
+  background: #e2e2e4;
+}
+
+.Clients .partners-logo .partner.clickky {
+  background: #c71c36;
+}
+
+.Clients .partners-logo .partner.ecolease {
+  background: #dcf3f9;
+}
+
+.Clients .partners-logo .partner.infratek {
+  background: #eaeaea;
+}
+
+.Clients .partners-logo .partner.citypark {
+  background: #282240;
+}
+
+.Clients .partners-logo .partner.artprint {
+  background: #1d4568;
+}
+
+.Clients .partners-logo .partner.ultimatecard {
+  background: #000000;
+}
 /*-----------Publication----------------------------------------------------------------------*/
 
 .Publication {
@@ -460,6 +869,7 @@ header::after {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 .Publication .Card {

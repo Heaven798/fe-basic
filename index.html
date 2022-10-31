@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/media.css">
@@ -12,111 +14,289 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container mobile-hcont container grid">
-            <div class="Logo flex">
-                <img class="Logo-img mg-r4" src="./images/Logo.svg" alt="Logo">
-                <img class="Logo-slash-img mg-b13 mg-r4" src="./images/Slash.svg" alt="Logo-slash">
-                <p class="LogoText">services</p>
-            </div>
-            <div class="contacts flex aligns-center justify-end">
-                <div class="language">
-                    <a class="LanguageText Language" href="#">УК</a>
-                    <a class="LanguageText Language" href="#">РУ</a>
-                    <a class="LanguageText Language Language-Active" href="#">EN</a>
+    <div class="wrap-section">
+        <section class="Header-section">
+            <header>
+                <div class="header-container mobile-hcont container grid">
+                    <div class="Logo flex">
+                        <img class="Logo-img mg-r4" src="./images/Logo.svg" alt="Logo">
+                    </div>
+                    <div class="contacts flex aligns-center justify-end">
+                        <div class="language">
+                            <a class="LanguageText Language" href="#">УК</a>
+                            <a class="LanguageText Language" href="#">РУ</a>
+                            <a class="LanguageText Language Language-Active" href="#">EN</a>
+                        </div>
+                        <span class="Circle Circle2"></span>
+                        <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a?sa=X&ved=2ahUKEwi4zc2CitD6AhWstYsKHfKYDbMQ8gF6BAgkEAE"
+                            target="_blank">
+                            <span class="AdressText">Kyiv, Mechnikova str, 14/1</span>
+                        </a>
+                        <span class="Circle"></span>
+                        <div>
+                            <a href="tel:+380800211927"><span class="TelefonText">0800 211 927</span></a>
+                        </div>
+                        <span class="Circle"></span>
+                        <svg class="LogoFacebook" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <a xlink:href="https://www.facebook.com/" target="_blank">
+                                <path
+                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                    fill="#B3B3BA" />
+                            </a>
+                        </svg>
+                    </div>
+                    <div class="nav">
+                        <ul class="nav-ul flex list-none justify-end">
+                            <li><a class="NavText mg-r15" href="#">about us</a></li>
+                            <li><a class="NavText mg-r15" href="#">services</a></li>
+                            <li><a class="NavText mg-r15" href="#">team</a></li>
+                            <li><a class="NavText mg-r15" href="#">publications</a></li>
+                            <li><a class="NavText" href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu flex justify-end">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
                 </div>
-                <span class="Circle Circle2"></span>
-                <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a?sa=X&ved=2ahUKEwi4zc2CitD6AhWstYsKHfKYDbMQ8gF6BAgkEAE"
-                    target="_blank">
-                    <span class="AdressText">Kyiv, Mechnikova str, 14/1</span>
-                </a>
-                <span class="Circle"></span>
-                <div>
-                    <a href="tel:+380800211927"><span class="TelefonText">0800 211 927</span></a>
-                </div>
-                <span class="Circle"></span>
-                <svg class="LogoFacebook" width="24" height="25" viewBox="0 0 24 25" fill="none"
+            </header>
+        </section>
+        <section class="Logo-section">
+            <p class="SecondText">you legal solutions provider</p>
+            <span class="Logo-Сircle">
+                <svg class="Logo-checked" width="20" height="12" viewBox="0 0 20 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <a xlink:href="https://www.facebook.com/" target="_blank">
-                        <path
-                            d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                            fill="#B3B3BA" />
-                    </a>
+                    <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2" />
                 </svg>
+            </span>
+        </section>
+        <section class="Description-section">
+            <div class="Description container-small">
+                <div class="nav-pills flex justify-between ">
+                    <div class="Pills nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-SecondText nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Consistent</button>
+                        <button class="nav-SecondText nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Customer oriented</button>
+                        <button class="nav-SecondText nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">Innovative</button>
+                        <button class="nav-SecondText nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">Business oriented</button>
+                    </div>
+                    <hr>
+                    <div class="tab-content" style="align-self: center;" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active aligns-center" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h2 class="TitleText">We turn the idea of legal services</h2>
+                            <p class="SecondText">Consolidating many years of experience and practice, the company's
+                                lawyers
+                                accompany complex projects and achieve a number of important decisions for the industry.
+                                Many of
+                                them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <h2 class="TitleText">Lorem ipsum dolor sit amet.</h2>
+                            <p class="SecondText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita,
+                                nisi? Inventore officiis odio accusantium facere cupiditate error est magni amet aut
+                                quos similique ratione, consectetur nihil quo? Optio, a architecto!</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <h2 class="TitleText">Lorem ipsum dolor sit amet consectetur.</h2>
+                            <p class="SecondText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat
+                                soluta voluptatum. Nobis, sint deleniti!</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            <h2 class="TitleText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                            <p class="SecondText">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Exercitationem nulla libero ipsam molestiae quasi dolorem commodi assumenda
+                                voluptatibus!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="nav">
-                <ul class="nav-ul flex list-none justify-end">
-                    <li><a class="NavText mg-r15" href="#">about us</a></li>
-                    <li><a class="NavText NavText-Active mg-r15" href="#">services</a></li>
-                    <li><a class="NavText mg-r15" href="#">team</a></li>
-                    <li><a class="NavText mg-r15" href="#">publications</a></li>
-                    <li><a class="NavText" href="#">contact</a></li>
-                </ul>
+        </section>
+        <section class="Cards-section">
+            <div class="CollectionCards container">
+                <div class="Service flex aligns-center">
+                    <h3 class="ServiceText">Services</h3>
+                    <svg class="Service-Checked" width="8" height="11" viewBox="0 0 8 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                    </svg>
+                </div>
+                <p class="TitleText mg-t10">What can we do better than others?</p>
+                <div class="Cards">
+                    <div class="Card">
+                        <span class="Square"><img src="./images/Ecommerce.svg" alt="Logo"></span>
+                        <h3 class="Card-TitleText">IT and e-commerce</h3>
+                        <p class="SecondText">An endless stream of contracts, tax issues, labor relations, corporate
+                            papers
+                            - legal work distracts you from doing business. But there is not much work to do to hire an
+                            in-house lawyer.</p>
+                    </div>
+                    <div class="Card">
+                        <span class="Square"><img src="./images/Support.svg" alt="Logo"></span>
+                        <h3 class="Card-TitleText">Comprehensive daily legal support</h3>
+                        <p class="SecondText">In addition, over time, the work will become the same type and
+                            uninteresting
+                            for a full-time lawyer. And we know very well how difficult it is to find a good candidate
+                            with
+                            experience in the field of information technology in Ukraine.</p>
+                    </div>
+                    <div class="Card">
+                        <span class="Square"><img src="./images/Coprorate.svg" alt="Logo"></span>
+                        <h3 class="Card-TitleText">Structuring corporate relationships</h3>
+                        <p class="SecondText">Instead of just providing legal services, we will hire a lawyer or a whole
+                            team that will fit into the daily life of your company.</p>
+                    </div>
+                    <div class="Card">
+                        <span class="Square"><img src="./images/Trust.svg" alt="Logo"></span>
+                        <h3 class="Card-TitleText">Building contractual relations</h3>
+                        <p class="SecondText">Once a week, or week after month, you have your own lawyer by your side.
+                            Anyone in the company can catch it at the coffee maker and just talk about current affairs
+                            instead of waiting for update status.</p>
+                    </div>
+                    <div class="Card">
+                        <span class="Square"><img src="./images/Protection.svg" alt="Logo"></span>
+                        <h3 class="Card-TitleText">Protection of business, intellectual property</h3>
+                        <p class="SecondText">And all the other time he will work on new diverse projects, so he will
+                            definitely not stop in professional development. One way or another, all Axon Partners will
+                            work
+                            for you instead of a corporate lawyer.</p>
+                    </div>
+                    <div class="Card">
+                        <span class="Square"><img src="./images/Court.svg" alt="Logo"></span>
+                        <h3 class="Card-TitleText">Judicial representation</h3>
+                        <p class="SecondText">Is it a small, medium-sized company or a market leader? Local business or
+                            multinational company? Do you have your own legal department or not?</p>
+                    </div>
+                </div>
             </div>
-            <div class="burger-menu flex justify-end">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </div>
-        </div>
-        <div class="Consultation container-small">
-            <div class="flex justify-center">
-                <span class="basket-background">
-                    <img class="basket" src="./images/Ecommerce.svg" alt="basket">
-                </span>
-            </div>
-            <p class="TitleText">IT and e-commerce</p>
-            <div class="Wrap-SecondText">
-                <p class="SecondText">An endless stream of contracts, tax issues, labor relations, corporate papers
-                    -
-                    legal work distracts you from doing business. But there is not much work to do to hire an
-                    in-house
-                    lawyer.
-                </p>
-                <p class="SecondText"> In addition, over time, the work will become the same type and uninteresting
-                    for
-                    a full-time lawyer.
-                    And we know very well how difficult it is to find a good candidate with experience in the field
-                    of
-                    information technology in Ukraine.</p>
-            </div>
-            <form class="flex justify-center">
-                <input class="button" type="button" value="Free consultation">
-            </form>
-            <hr>
-        </div>
-        <div class="Advantage container-small">
-            <h3 class="TitleText block">Services in this area:</h3>
-            <div class="Nav flex justify-around mg-t30">
-                <ul>
-                    <li class="SecondText"><a>support of investment projects for the development of port
-                            infrastructure;</a></li>
-                    <li class="SecondText mg-t15"><a>certification of GTS, entering information about them in mandatory
-                            databases and
-                            registers;</a></li>
-                    <li class="SecondText mg-t15"><a>registration of permits for the construction of port terminals;</a>
-                    </li>
-                    <li class="SecondText mg-t15"><a>registration of permit and other mandatory documentation required
-                            for
-                            carrying out activities
-                            in the port (emission permit, conclusion on EIA, RTC, etc.);</a></li>
-                </ul>
-                <ul>
-                    <li class="SecondText"><a>support of procedures related to the lease of state property in the
-                            port;</a></li>
-                    <li class="SecondText mg-t15"><a>support of procedures related to confirmation of the status of port
-                            operator, maritime agent, foreign sailing line;</a></li>
-                    <li class="SecondText mg-t15"><a>support of procedures related to the inclusion of the company
-                            within the
-                            port;</a></li>
-                    <li class="SecondText mg-t15"><a>appeals against actions related to the illegal imposition of
-                            services in
-                            the port by monopoly companies.</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </section>
+    </div>
     <main>
+        <section class="Team">
+            <div class="container">
+                <div id="Slide" class="Team-slide">
+                    <div class="item">
+                        <div class="item-container">
+                            <img class="Slide-Photo" src="./images/Team-1.jpg" alt="photo">
+                            <div class="wrap">
+                                <div class="flex aligns-center">
+                                    <h3 class="SlideText">команда</h3>
+                                    <svg class="Slide-Checked" width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <h2 class="Slide-TitleText">Ми звикли брати на себе відповідальність та завжди
+                                    гарантуємо
+                                    чесну, вчасну
+                                    допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <h4 class="Slide-SecondText">Олександр Олександровський</h4>
+                                <p class="Slide-ThirdText">Керуючий партнер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-container">
+                            <div>
+                                <img class="Slide-Photo" src="./images/Team-4.jpg" alt="photo">
+                            </div>
+                            <div class="wrap">
+                                <div class="flex aligns-center">
+                                    <h3 class="SlideText">команда</h3>
+                                    <svg class="Slide-Checked" width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <h2 class="Slide-TitleText">Ми звикли брати на себе відповідальність та завжди
+                                    гарантуємо
+                                    чесну, вчасну
+                                    допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <h4 class="Slide-SecondText">Сергій Бінн</h4>
+                                <p class="Slide-ThirdText">Ассоциированный</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-container">
+                            <div>
+                                <img class="Slide-Photo" src="./images/Team-5.jpg" alt="photo">
+                            </div>
+                            <div class="wrap">
+                                <div class="flex aligns-center">
+                                    <h3 class="SlideText">команда</h3>
+                                    <svg class="Slide-Checked" width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <h2 class="Slide-TitleText">Ми звикли брати на себе відповідальність та завжди
+                                    гарантуємо
+                                    чесну, вчасну
+                                    допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <h4 class="Slide-SecondText">Оксана Кобзар</h4>
+                                <p class="Slide-ThirdText">Долевой партнер, присяжный поверенный</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Clients">
+            <div class="Clients-container container">
+                <h3 class="ClientsTitleText">They already trust us</h3>
+                <div class="partners-logo">
+                    <div class="partner hillel">
+                        <img src="./images/Hillel.png" alt="hillel">
+                    </div>
+                    <div class="partner wannabiz">
+                        <img src="./images/wannabiz.png" alt="wannabiz">
+                    </div>
+                    <div class="partner tapgerine">
+                        <img src="./images/tapgerine.png" alt="tapgerine">
+                    </div>
+                    <div class="partner threedlook">
+                        <img src="./images/3dlook.png" alt="3dlook">
+                    </div>
+                    <div class="partner orangear">
+                        <img src="./images/orangear.png" alt="orangear">
+                    </div>
+                    <div class="partner adtelligent">
+                        <img src="./images/adtelligent.png" alt="adtelligent">
+                    </div>
+                    <div class="partner clickky">
+                        <img src="./images/clickky.png" alt="clickky">
+                    </div>
+                    <div class="partner ecolease">
+                        <img src="./images/ecolease.png" alt="ecolease">
+                    </div>
+                    <div class="partner infratek">
+                        <img src="./images/infratek.png" alt="infratek">
+                    </div>
+                    <div class="partner citypark">
+                        <img src="./images/citypark.png" alt="citypark">
+                    </div>
+                    <div class="partner artprint">
+                        <img src="./images/artprint.png" alt="artprint">
+                    </div>
+                    <div class="partner ultimatecard">
+                        <img src="./images/ultimatecard.png" alt="ultimatecard">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="Publication">
             <div class="container">
                 <div class="flex aligns-center">
@@ -140,12 +320,14 @@
                     <div class="Card Card2">
                         <img class="photo" src="./images/Publication-2.png" alt="photo">
                         <div class="Text">
-                            <h4 class="Card-TitleText">Penalty for the Good Corporation: what will happen to Google and
+                            <h4 class="Card-TitleText">Penalty for the Good Corporation: what will happen to Google
+                                and
                                 others for violating the GDPR</h4>
                             <p class="DateText">September 29</p>
                             <hr>
                             <p class="DescriptionText">And why the recovery of 50 million euros could be a fateful
-                                precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                                precedent According to Mind.ua January 21 National Commission for Data Protection.
+                            </p>
                         </div>
                     </div>
                     <div class="Card Card3">
@@ -155,7 +337,8 @@
                             <p class="DateText">August 19</p>
                             <hr>
                             <p class="DescriptionText">What and how modern vloggers, opinion leaders and
-                                crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks
+                                crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
+                                looks
                                 like this: an apartment in…</p>
                         </div>
                     </div>
@@ -200,6 +383,11 @@
             </div>
         </section>
     </footer>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
