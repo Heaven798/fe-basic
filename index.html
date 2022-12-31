@@ -5,18 +5,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>HomeWork</title>
 </head>
 
 <body>
     <header>
+        <div class="container flex justify-between">
+            <img src="./images/Logo.png" alt="logo">
+            <div class="flex gap68 aligns-center">
+                <ul class="nav flex gap50">
+                    <li><a class="decor-none text-upper" href="">home</a></li>
+                    <li><a class="decor-none text-upper" href="">menu</a></li>
+                    <li><a class="decor-none text-upper" href="">our story</a></li>
+                    <li><a class="decor-none text-upper" href="">contact us</a></li>
+                </ul>
+                <form action="#" class="Search-bar">
+                    <input type="search" value="">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px"
+                            height="30px">
+                            <path fill-rule="evenodd" fill="rgb(84, 82, 79)"
+                                d="M20.900,17.801 C24.573,12.716 23.345,5.675 18.158,2.074 C12.971,-1.526 5.789,-0.322 2.116,4.764 C-1.556,9.849 -0.328,16.889 4.859,20.489 C8.562,23.060 13.456,23.257 17.361,20.997 L25.845,29.265 C26.762,30.210 28.286,30.248 29.250,29.350 C30.215,28.452 30.253,26.958 29.338,26.013 C29.309,25.983 29.281,25.955 29.250,25.927 L20.900,17.801 ZM11.501,18.572 C7.402,18.573 4.079,15.317 4.077,11.299 C4.076,7.281 7.396,4.023 11.496,4.021 C15.589,4.020 18.911,7.269 18.919,11.282 C18.926,15.302 15.607,18.565 11.506,18.572 C11.505,18.572 11.504,18.572 11.501,18.572 Z" />
+                        </svg></button>
+                </form>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="FirstSection">
+            <div class="container flex flex-start">
+                <div class="wrap">
+                    <h1 class="TitleText text-upper">It's time for hiking</h1>
+                    <h3 class="SecondText text-upper">Lorem, ipsum dolor.</h3>
+                    <input type="button" value="READ MORE">
+                    <p class="Description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis odit
+                        laudantium at eum quibusdam a. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="CardsCollection">
             <div class="container">
-                <h1>HomeWork</h1>
+                <h2 class="TitleText align-center text-upper">Let's go</h2>
+                <p class="DescriptionText align-center">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. <br> Earum nisi
+                    error voluptatem cupiditate
+                    quaerat deleniti!</p>
+                <div class="flex justify-between gap68">
+                    <div class="Card">
+                        <img src="./images/Card1.png" alt="photo1">
+                        <div class="Card-wrap">
+                            <h5 class="TitleText">Lorem, ipsum</h5>
+                            <p class="SecondText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <img src="./images/Card2.png" alt="photo2">
+                        <div class="Card-wrap">
+                            <h5 class="TitleText">Lorem, ipsum</h5>
+                            <p class="SecondText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <img src="./images/Card3.png" alt="photo3">
+                        <div class="Card-wrap">
+                            <h5 class="TitleText">Lorem, ipsum</h5>
+                            <p class="SecondText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <input type="button" value="SHOW MORE">
+                </div>
+            </div>
+        </section>
+        <section class="Discont-section">
+            <div class="large-container flex bg gap40">
+                <img class="" src="./images/Discount.png" alt="">
+                <div class="wrap">
+                    <h3 class="TitleText">Discount up to <br> 50% All Excursions</h3>
+                    <p class="DiscriptionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                        repellendus officia tenetur, eligendi perspiciatis quod voluptatem dignissimos nemo cumque
+                        incidunt.</p>
+                    <input class="text-upper" type="button" value="Read more">
+                </div>
+            </div>
+        </section>
+        <section class="Promo-section">
+            <div class="large-container flex bg2 gap40">
+                <div class="wrap">
+                    <h3 class="TitleText">January's Promo:<br>Buy 1 Get 1 Free! </h3>
+                    <p class="DiscriptionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                        repellendus officia tenetur, eligendi perspiciatis quod voluptatem dignissimos nemo cumque
+                        incidunt.</p>
+                    <input class="text-upper" type="button" value="Read more">
+                </div>
+                <img class="" src="./images/Promo.png" alt="">
+            </div>
+        </section>
+        <section class="Description-section">
+            <div class="large-container">
+                <h3 class="TitleText align-center">Hiking in the mountains</h3>
+                <p class="DescriptionText align-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+                    <br>
+                    corrupti officiis corporis culpa! Officia dicta sunt pariatur, fugit consequuntur aspernatur
+                    illum<br>
+                    iusto earum perferendis. Voluptatibus in ea amet provident sequi nam est accusantium, quibusdam
+                    fuga<br>
+                    voluptas corporis, nostrum esse doloremque?
+                </p>
+            </div>
+        </section>
+        <section class="Explore-section">
+            <div class="container">
+
+                <h3 class="TitleText text-upper">Explore<br><span class="Span-Text">The world</span></h3>
+            </div>
+        </section>
+        <section class="Feedback-section">
+            <div class="container">
+                <div class="flex justify-between">
+                    <div class="wrap">
+                        <h4 class="TitleText">Lorem, ipsum.</h4>
+                        <p class="DescriptionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                            molestias tempore, nisi nostrum
+                            assumenda praesentium ipsa ab odio aut molestiae.</p>
+                    </div>
+                    <div class="wrap">
+                        <h4 class="TitleText">Lorem, ipsum.</h4>
+                        <p class="DescriptionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                            molestias tempore, nisi nostrum
+                            assumenda praesentium ipsa ab odio aut molestiae.</p>
+                    </div>
+                    <div class="wrap">
+                        <h4 class="TitleText">Lorem, ipsum.</h4>
+                        <p class="DescriptionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                            molestias tempore, nisi nostrum
+                            assumenda praesentium ipsa ab odio aut molestiae.</p>
+                    </div>
+                </div>
+                <h3 class="TitleText">"</h3>
+                <h5 class="SecondText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magni eaque
+                    distinctio, suscipit
+                    unde impedit.</h5>
+                <p class="DiscriptionText">Lorem, ipsum.</p>
             </div>
         </section>
     </main>

@@ -9,7 +9,7 @@ img {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -23,4 +23,404 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.large-container {
+  width: 100%;
+  max-width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap50 {
+  gap: 50px;
+}
+
+.gap68 {
+  gap: 68px;
+}
+
+.gap40 {
+  gap: 40px;
+}
+
+.decor-none {
+  text-decoration: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.aligns-center {
+  align-items: center;
+}
+
+/*------header-----------------------------------------*/
+
+header {
+  padding: 34px 0px 10px 0px;
+}
+
+header .nav {
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+header .nav a {
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #54524f;
+}
+
+header .Search-bar {
+  background-color: #c3bfbc;
+  background-size: cover;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .Search-bar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 120px;
+  height: 20px;
+  font-size: 16px;
+}
+
+header .Search-bar button {
+  border: none;
+  background: none;
+}
+
+/*------FirstSection-----------------------------------------*/
+
+.FirstSection {
+  background: url("../images/PhotoWoman.png") center/cover;
+  height: 1170px;
+  padding: 200px 0px 200px 0px;
+}
+
+.FirstSection .wrap {
+  max-width: 400px;
+}
+
+.FirstSection .TitleText {
+  font-family: "OpenSans";
+  font-size: 60px;
+  font-weight: 800;
+  color: #deb37e;
+}
+
+.FirstSection .SecondText {
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #54524f;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.FirstSection input {
+  margin-top: 60px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: none;
+  color: #776c64;
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 800;
+  background-color: #fefefd;
+}
+
+.FirstSection .Description {
+  font-style: italic;
+  color: #54524f;
+  margin-top: 26px;
+}
+
+/*------CardsCollection--------------------------------*/
+
+.CardsCollection {
+  background: url("../images/Background2.png") no-repeat bottom left;
+  padding: 60px 0px 180px 0px;
+}
+
+.CardsCollection .TitleText {
+  font-family: "OpenSans";
+  font-size: 45px;
+  font-weight: 800;
+  color: #deb37e;
+}
+
+.CardsCollection .DescriptionText {
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #7f7770;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+.CardsCollection .Wrap {
+  display: flex;
+  max-width: 550px;
+  flex-direction: column;
+}
+
+.CardsCollection .Card {
+  background: #7f7770;
+  max-width: 500px;
+}
+
+.CardsCollection .Card .TitleText {
+  font-family: "OpenSans";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.CardsCollection .Card .SecondText {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.CardsCollection .Card .Card-wrap {
+  padding: 50px 15px 50px 15px;
+}
+
+.CardsCollection input {
+  letter-spacing: 2px;
+  margin-top: 55px;
+  height: 60px;
+  width: 250px;
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 800;
+  background: #7f7770;
+  border-radius: 35px;
+  color: #fff;
+  border: none;
+}
+
+/*------Discont-section--------------------------------*/
+
+.Discont-section .bg {
+  background: #7f7770;
+}
+
+.Discont-section img {
+  width: 100%;
+  max-height: 780px;
+}
+
+.Discont-section .wrap {
+  padding: 200px 150px 150px 9px;
+  max-width: 700px;
+}
+
+.Discont-section .wrap .TitleText {
+  font-family: "OpenSans";
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.Discont-section .wrap .DiscriptionText {
+  margin-top: 20px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.Discont-section .wrap input {
+  margin-top: 53px;
+  letter-spacing: 2px;
+  height: 60px;
+  width: 200px;
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 700;
+  background: #e2a355;
+  border-radius: 35px;
+  color: #fff;
+  border: none;
+}
+
+/*------Promo-section--------------------------------*/
+
+.Promo-section .bg2 {
+  background: #deb37e;
+}
+
+.Promo-section img {
+  width: 100%;
+  max-height: 780px;
+}
+
+.Promo-section .wrap {
+  padding: 200px 9px 150px 150px;
+  max-width: 700px;
+}
+
+.Promo-section .wrap .TitleText {
+  font-family: "OpenSans";
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.Promo-section .wrap .DiscriptionText {
+  margin-top: 20px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.Promo-section .wrap input {
+  margin-top: 53px;
+  letter-spacing: 2px;
+  height: 60px;
+  width: 200px;
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 700;
+  background: #e2a355;
+  border-radius: 35px;
+  color: #fff;
+  border: none;
+}
+
+/*------Description-section--------------------------------*/
+
+.Description-section {
+  padding: 275px 0px 375px 0px;
+  background: url("../images/Background3.png") no-repeat center/cover;
+  height: 1080px;
+}
+
+.Description-section .TitleText {
+  font-family: "OpenSans";
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.Description-section .DescriptionText {
+  margin-top: 20px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #dbdbdb;
+}
+
+/*------Explore-section--------------------------------*/
+
+.Explore-section {
+  padding: 400px 100px 400px 0px;
+  background: url("../images/Explore.png") no-repeat center/cover;
+  height: 1250px;
+}
+
+.Explore-section .TitleText {
+  font-family: "OpenSans";
+  font-size: 80px;
+  font-weight: 800;
+  font-style: italic;
+  color: #deb37e;
+  text-align: right;
+}
+
+.Explore-section .TitleText .Span-Text {
+  font-family: "OpenSans";
+  font-size: 80px;
+  font-weight: 800;
+  font-style: italic;
+  color: #54524f;
+  text-align: right;
+}
+
+/*-----------Feedback-section---------------------------*/
+
+.Feedback-section {
+  padding: 50px 0px 50px 0px;
+  background: url("../images/Background4.png") no-repeat bottom right;
+  height: 800px;
+}
+
+.Feedback-section .wrap {
+  max-width: 350px;
+}
+
+.Feedback-section .wrap .TitleText {
+  text-align: start;
+  font-family: "OpenSans";
+  font-size: 30px;
+  font-weight: 700;
+  color: #deb37e;
+}
+
+.Feedback-section .wrap .DescriptionText {
+  margin-top: 25px;
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 400;
+  color: #333d42;
+}
+
+.Feedback-section .TitleText {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "OpenSans";
+  font-size: 45px;
+  font-weight: 700;
+  color: #3f3f3f;
+}
+
+.Feedback-section .SecondText {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 300;
+  color: #3f3f3f;
+}
+
+.Feedback-section .DiscriptionText {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 700;
+  color: #3f3f3f;
 }
