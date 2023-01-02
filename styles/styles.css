@@ -9,7 +9,7 @@ img {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -18,9 +18,532 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1630px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px 0px 15px;
+}
+
+.container-small {
+  width: 100%;
+  max-width: 1390px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.block {
+  display: block;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.mg-b15 {
+  margin-bottom: 15px;
+}
+
+.mg-b5 {
+  margin-bottom: 5px;
+}
+
+.mg-b13 {
+  margin-bottom: 13px;
+}
+
+.mg-r4 {
+  margin-right: 4px;
+}
+
+.mg-r14 {
+  margin-right: 14px;
+}
+
+.mg-r15 {
+  margin-right: 15px;
+}
+
+.mg-b15 {
+  margin-bottom: 15px;
+}
+
+.mg-t21 {
+  margin-top: 21px;
+}
+
+.mg-t30 {
+  margin-top: 30px;
+}
+
+.mg-b30 {
+  margin-bottom: 30px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.aligns-center {
+  align-items: center;
+}
+
+.list-none {
+  list-style: none;
+}
+
+/*-----------Header----------------------------------------------------------------------*/
+
+header {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+header .LogoText {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .contacts .LanguageText {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 5px 7px;
+  /* letter-spacing: 1px; */
+  color: #b3b3ba;
+}
+header .contacts .Language {
+  min-width: 33px;
+  min-height: 25px;
+  transition: all 0.2s linear;
+}
+
+header .contacts .Language-Active {
+  background: #f0145a;
+  border-radius: 8px;
+  color: #fff;
+}
+
+header .contacts .Language:hover {
+  border-radius: 8px;
+  background: #f5f5fa;
+  color: #b3b3ba;
+}
+
+/*header .contacts .Language:active {
+  background: #f0145a;
+  border-radius: 8px;
+  color: #fff;
+} */
+
+header .LogoFacebook path {
+  transition: all 0.2s linear;
+}
+
+header .LogoFacebook:hover path {
+  fill: #f0145a;
+}
+
+header img {
+  display: block;
+}
+
+.Circle {
+  display: block;
+  height: 6px;
+  width: 6px;
+  background: #e6e6f0;
+  border-radius: 50%;
+  margin: 0px 6px;
+}
+
+header .contacts .AdressText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+}
+
+header .contacts .TelefonText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+}
+
+header .nav {
+  margin-top: 16px;
+}
+
+header .nav .NavText {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+}
+
+header .nav .NavText:hover {
+  border-bottom: 2px solid #24a3ff;
+  color: #24a3ff;
+}
+
+header .nav .NavText-Active {
+  border-bottom: 2px solid #f0145a;
+  color: #f0145a;
+}
+
+/* header .nav .NavText:active {
+  border-bottom: 2px solid #f0145a;
+  color: #f0145a;
+} */
+
+header .header-container {
+  grid-template-areas:
+    "Logo Contacts"
+    "Logo nav";
+}
+
+header .burger-menu {
+  grid-area: Burger;
+}
+
+header .Logo {
+  grid-area: Logo;
+}
+header .contacts {
+  grid-area: Contacts;
+}
+header .nav-ul {
+  grid-area: nav;
+}
+
+header .header-mobile .Logo-mobile .Logo-mobileText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323264;
+}
+
+header .burger-menu {
+  display: none;
+}
+
+header .burger-menu .line1 {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #323264;
+  margin-top: 6px;
+}
+
+header .burger-menu .line2 {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #323264;
+  margin-top: 12px;
+}
+
+header .burger-menu .line3 {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #323264;
+  margin-top: 18px;
+}
+
+/*-----------SectionNews----------------------------------------------------------------------*/
+
+.SectionNews {
+  background-color: #f5f5fa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.SectionNews .switch-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.SectionNews .switch-button {
+  background: #e6e6f0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 233px;
+  height: 42px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  padding-right: 120px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.SectionNews .switch-button:before {
+  content: "articles";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.SectionNews .switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.SectionNews .switch-button-checkbox:checked + .switch-button-label:before {
+  transform: translateX(120px);
+  transition: transform 300ms linear;
+}
+
+.SectionNews .switch-button-checkbox + .switch-button-label {
+  position: relative;
+  padding: 11px 30px 8px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  pointer-events: none;
+}
+.SectionNews .switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: #fff;
+  width: 105px;
+  height: 38px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 10px;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+
+.SectionNews .switch-button-label-span {
+  position: relative;
+}
+
+.SectionNews .SectionNews-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.SectionNews .SectionNews-container .Card {
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.SectionNews .SectionNews-container .Card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.SectionNews .SectionNews-container .Card .wrap {
+  padding: 30px;
+}
+
+.SectionNews .SectionNews-container .Card .wrap .TitleText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+  margin-bottom: 15px;
+}
+
+.SectionNews .SectionNews-container .Card .wrap .TitleText:hover {
+  cursor: pointer;
+  color: #f0145a;
+}
+
+.SectionNews .SectionNews-container .Card .wrap .DateText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  margin-bottom: 15px;
+}
+
+.SectionNews .SectionNews-container .Card .wrap .Card-hr {
+  height: 4px;
+  background: #e6e6f0;
+  border-style: none;
+  margin-bottom: 15px;
+}
+
+.SectionNews .SectionNews-container .Card .wrap .DescriptionText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.SectionNews .BtnForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.SectionNews .BtnMorePublication {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: #ffffff;
+  width: 211px;
+  height: 56px;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border-style: none;
+  cursor: pointer;
+}
+
+/*-----------Footer----------------------------------------------------------------------*/
+
+footer {
+  background: #f5f5fa;
+}
+
+.Footer-hr {
+  display: block;
+  height: 4px;
+  background: #e6e6f0;
+  border-style: none;
+  margin-bottom: 30px;
+}
+
+.Footer img {
+  display: block;
+}
+
+.Footer {
+  padding: 30px 0px 30px 0px;
+}
+.Footer .Footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer .AdressText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.Footer a {
+  text-decoration: none;
+}
+
+.Footer .NavigationText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+}
+
+.Footer .TelText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #46466e;
+}
+
+.Footer .LogoFacebook2 path {
+  transition: all 0.2s linear;
+}
+
+.Footer .LogoFacebook2:hover path {
+  fill: #f0145a;
+}
+
+.Footer .EmailText {
+  transition: all 0.2s linear;
+}
+
+.Footer .EmailText:hover {
+  color: #f0145a;
+}
+
+.Footer .EmailText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+}
+
+.Footer .CopyrightText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+}
+
+.Circle-grey {
+  background: #b3b3ba;
 }
